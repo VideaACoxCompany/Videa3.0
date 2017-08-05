@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SIRAudit]
+    AUTHORIZATION [dbo];
+

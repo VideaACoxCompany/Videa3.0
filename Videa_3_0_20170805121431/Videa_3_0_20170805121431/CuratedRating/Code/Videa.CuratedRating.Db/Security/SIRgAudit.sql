@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SIRgAudit]
+    AUTHORIZATION [dbo];
+

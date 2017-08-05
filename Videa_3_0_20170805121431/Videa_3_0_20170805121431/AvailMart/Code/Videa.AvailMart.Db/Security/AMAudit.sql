@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [AMAudit]
+    AUTHORIZATION [dbo];
+

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [AMApi]
+    AUTHORIZATION [dbo];
+

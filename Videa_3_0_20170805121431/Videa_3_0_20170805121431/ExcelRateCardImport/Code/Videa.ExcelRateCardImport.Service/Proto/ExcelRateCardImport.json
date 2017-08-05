@@ -1,0 +1,58 @@
+﻿{
+  "ProtoSyntax": "proto3",
+  "Package": null,
+  "Import": [
+    "google/protobuf/timestamp.proto",
+    "google/protobuf/duration.proto"
+  ],
+  "ProtoService": [
+    {
+      "ServiceName": "ExcelRateCardImportService",
+      "Rpc": [
+        {
+          "RpcName": "ImportRateCard",
+          "Request": {
+            "MessageName": "ImportRateCardRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "Response": {
+            "MessageName": "ImportRateCardResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        }
+      ]
+    }
+  ],
+  "ProtoMessage": [],
+  "Option": [
+    "csharp_namespace = \"Videa.ImportRateCard.Service.Proto.Types\";"
+  ],
+  "OwnedByProject": {
+    "ProjectIs": 100,
+    "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreConsoleApp\\NetCoreConsoleApp.csproj",
+    "SolutionFolder": null,
+    "ProjectFolder": "Code\\Videa.ExcelRateCardImport.Service",
+    "ProjectID": null,
+    "ProjectName": "Videa.ExcelRateCardImport.Service",
+    "ProjectShortName": "ExcelRateCardImport.Service",
+    "ProjectType": 0,
+    "FileName": "Videa.ExcelRateCardImport.Service.csproj",
+    "ProjectGuid": "90799858-9f03-7ea8-e775-449a8d0d4599",
+    "ProjectContent": [],
+    "Class": [],
+    "Interface": [],
+    "Path": null,
+    "DefaultNamespace": null,
+    "AssemblyName": "Videa.ExcelRateCardImport.Service",
+    "ProjectReference": [],
+    "NuGetReference": [],
+    "PostBuildEventStep": []
+  }
+}

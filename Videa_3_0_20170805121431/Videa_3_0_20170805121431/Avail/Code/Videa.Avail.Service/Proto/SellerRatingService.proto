@@ -1,0 +1,95 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+option csharp_namespace = "Videa.SellerRatingNS.Service.Proto.Types";
+
+service SellerRatingService {
+	rpc RatingDemoDelete (RatingDemoDeleteRequest) returns (RatingDemoDeleteResponse) {}
+	rpc RatingPeriodDelete (RatingPeriodDeleteRequest) returns (RatingPeriodDeleteResponse) {}
+	rpc SellableInventoryRatingDelete (SellableInventoryRatingDeleteRequest) returns (SellableInventoryRatingDeleteResponse) {}
+	rpc RatingDemoAddUpdate (RatingDemoAddUpdateRequest) returns (RatingDemoAddUpdateResponse) {}
+	rpc RatingPeriodAddUpdate (RatingPeriodAddUpdateRequest) returns (RatingPeriodAddUpdateResponse) {}
+	rpc SellableInventoryRatingAddUpdate (SellableInventoryRatingAddUpdateRequest) returns (SellableInventoryRatingAddUpdateResponse) {}
+	rpc GetSellerRatingsByInventoryKeys (GetSellerRatingsByInventoryKeysRequest) returns (GetSellerRatingsByInventoryKeysResponse) {}
+	rpc GetSellerRatingsByRatingKeys (GetSellerRatingsByRatingKeysRequest) returns (GetSellerRatingsByRatingKeysResponse) {}
+	rpc BulkStore (BulkStoreRequest) returns (BulkStoreResponse) {}
+}
+message RatingDemo {
+	string RatingDemoHashKey = 1; // 
+	int32 RatingDemoSqn = 2; // 
+	string RatingDemoName = 3; // 
+}
+message RatingPeriod {
+	string RatingPeriodHashKey = 1; // 
+	int32 RatingPeriodSqn = 2; // 
+	string RatingPeriodName = 3; // 
+	google.protobuf.Timestamp RatingPeriodStartDate = 4; // 
+	google.protobuf.Timestamp RatingPeriodEndDate = 5; // 
+}
+message SellableInventoryRating {
+	string SellableInventoryRatingHashKey = 1; // 
+	string SellableInventoryHashKey = 2; // 
+	int32 SellableInventoryRatingSqn = 3; // 
+	string RatingDemoHashKey = 4; // 
+	string RatingPeriodHashKey = 5; // 
+	string SellableInventoryRatingValue = 6; // 
+	google.protobuf.Timestamp RowVersion = 7; // 
+}
+message Rating {
+	string SellableInventoryRatingValue = 1; // 
+	string SellableInventoryHashKey = 2; // 
+	string SellableInventoryRatingHashKey = 3; // 
+	string RatingDemoHashKey = 4; // 
+}
+message RatingDemoDeleteRequest {
+	string RatingDemoHashKey = 1; // 
+}
+message RatingDemoDeleteResponse {
+}
+message RatingPeriodDeleteRequest {
+	string RatingPeriodHashKey = 1; // 
+}
+message RatingPeriodDeleteResponse {
+}
+message SellableInventoryRatingDeleteRequest {
+	string SellableInventoryRatingHashKey = 1; // 
+}
+message SellableInventoryRatingDeleteResponse {
+}
+message RatingDemoAddUpdateRequest {
+	RatingDemo RatingDemo = 1; // 
+}
+message RatingDemoAddUpdateResponse {
+}
+message RatingPeriodAddUpdateRequest {
+	RatingPeriod RatingPeriod = 1; // 
+}
+message RatingPeriodAddUpdateResponse {
+}
+message SellableInventoryRatingAddUpdateRequest {
+	SellableInventoryRating SellableInventoryRating = 1; // 
+}
+message SellableInventoryRatingAddUpdateResponse {
+}
+message GetSellerRatingsByInventoryKeysRequest {
+	string SellableInventoryList = 1; // 
+}
+message GetSellerRatingsByInventoryKeysResponse {
+	repeated Rating Rating = 1; // 
+}
+message GetSellerRatingsByRatingKeysRequest {
+	string SellableInventoryRatingList = 1; // 
+}
+message GetSellerRatingsByRatingKeysResponse {
+	repeated Rating Rating = 1; // 
+}
+message BulkStoreRequest {
+	repeated RatingDemo RatingDemo = 1; // 
+	repeated RatingPeriod RatingPeriod = 2; // 
+	repeated SellableInventoryRating SellableInventoryRating = 3; // 
+	repeated Rating Rating = 4; // 
+}
+message BulkStoreResponse {
+}
+

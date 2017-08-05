@@ -1,0 +1,87 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+option csharp_namespace = "Videa.CuratedRateNS.Service.Proto.Types";
+
+service CuratedRateService {
+	rpc CuratedRateDelete (CuratedRateDeleteRequest) returns (CuratedRateDeleteResponse) {}
+	rpc RateTypeDelete (RateTypeDeleteRequest) returns (RateTypeDeleteResponse) {}
+	rpc CurationStatusDelete (CurationStatusDeleteRequest) returns (CurationStatusDeleteResponse) {}
+	rpc CuratedRateAddUpdate (CuratedRateAddUpdateRequest) returns (CuratedRateAddUpdateResponse) {}
+	rpc RateTypeAddUpdate (RateTypeAddUpdateRequest) returns (RateTypeAddUpdateResponse) {}
+	rpc CurationStatusAddUpdate (CurationStatusAddUpdateRequest) returns (CurationStatusAddUpdateResponse) {}
+	rpc GetConfirmedRates (GetConfirmedRatesRequest) returns (GetConfirmedRatesResponse) {}
+	rpc BulkStore (BulkStoreRequest) returns (BulkStoreResponse) {}
+}
+message CuratedRate {
+	int64 CuratedRateId = 1; // 
+	string SellableInventoryHashKey = 2; // 
+	string RateHashKey = 3; // 
+	int32 RateVersion = 4; // 
+	string CuratedRateValue = 5; // 
+	bool IsDynamicRate = 6; // 
+	int32 RateTypeId = 7; // 
+	int32 CurationStatusId = 8; // 
+	string CreatedBy = 9; // 
+	string ModifiedBy = 10; // 
+	google.protobuf.Timestamp RowVersion = 11; // 
+}
+message RateType {
+	int32 RateTypeId = 1; // 
+	string RateTypeName = 2; // 
+	string RateTypeDescription = 3; // 
+}
+message CurationStatus {
+	int32 CurationStatusId = 1; // 
+	string CurationStatusName = 2; // 
+	string CurationStatusDescription = 3; // 
+}
+message Rate {
+	int32 todo = 1; // 
+}
+message CuratedRateDeleteRequest {
+	int64 CuratedRateId = 1; // 
+}
+message CuratedRateDeleteResponse {
+}
+message RateTypeDeleteRequest {
+	int32 RateTypeId = 1; // 
+}
+message RateTypeDeleteResponse {
+}
+message CurationStatusDeleteRequest {
+	int32 CurationStatusId = 1; // 
+}
+message CurationStatusDeleteResponse {
+}
+message CuratedRateAddUpdateRequest {
+	CuratedRate CuratedRate = 1; // 
+}
+message CuratedRateAddUpdateResponse {
+}
+message RateTypeAddUpdateRequest {
+	RateType RateType = 1; // 
+}
+message RateTypeAddUpdateResponse {
+}
+message CurationStatusAddUpdateRequest {
+	CurationStatus CurationStatus = 1; // 
+}
+message CurationStatusAddUpdateResponse {
+}
+message GetConfirmedRatesRequest {
+	string SellableInventoryList = 1; // 
+}
+message GetConfirmedRatesResponse {
+	repeated Rate Rate = 1; // 
+}
+message BulkStoreRequest {
+	repeated CuratedRate CuratedRate = 1; // 
+	repeated RateType RateType = 2; // 
+	repeated CurationStatus CurationStatus = 3; // 
+	repeated Rate Rate = 4; // 
+}
+message BulkStoreResponse {
+}
+

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SIRApi]
+    AUTHORIZATION [dbo];
+

@@ -1,0 +1,140 @@
+@startuml
+rectangle "Rate"{
+package "Videa.SellerRate"{
+	database "SellerRate.Db" as DB1
+	component "SellerRate.Data" <<DAL>> as DA1
+	component "SellerRate.Service" <<SVC>> as SVC1
+	
+	DA1 -[#green]down->  DB1
+	SVC1 -[#green]down->  DA1
+}
+package "Videa.SharebuilderRate"{
+	database "SharebuilderRate.Db" as DB2
+	component "SharebuilderRate.Data" <<DAL>> as DA2
+	component "SharebuilderRate.Service" <<SVC>> as SVC2
+	
+	DA2 -[#green]down->  DB2
+	SVC2 -[#green]down->  DA2
+}
+package "Videa.TrafficStatistic"{
+	database "TrafficStatistic.Db" as DB3
+	component "TrafficStatistic.Data" <<DAL>> as DA3
+	component "TrafficStatistic.Service" <<SVC>> as SVC3
+	
+	DA3 -[#green]down->  DB3
+	SVC3 -[#green]down->  DA3
+}
+}
+rectangle "Ingest"{
+package "Videa.ExcelRateCardImport"{
+	component "ExcelRateCardImport.Service" <<SVC>> as SVC4
+	
+}
+}
+rectangle "Inventory"{
+package "Videa.InventoryGuide"{
+	database "InventoryGuide.Db" as DB5
+	component "InventoryGuide.Data" <<DAL>> as DA5
+	component "InventoryGuide.Service" <<SVC>> as SVC5
+	
+	DA5 -[#green]down->  DB5
+	SVC5 -[#green]down->  DA5
+}
+package "Videa.SellableInventoryMart"{
+	database "SellableInventoryMart.Db" as DB6
+	component "SellableInventoryMart.Data" <<DAL>> as DA6
+	component "SellableInventoryMart.Service" <<SVC>> as SVC6
+	
+	DA6 -[#green]down->  DB6
+	SVC6 -[#green]down->  DA6
+}
+package "Videa.RateCardConfirmation"{
+	component "RateCardConfirmation.Service" <<SVC>> as SVC7
+	
+}
+}
+rectangle "Curation"{
+package "Videa.CuratedRate"{
+	database "CuratedRate.Db" as DB8
+	component "CuratedRate.Data" <<DAL>> as DA8
+	component "CuratedRate.Service" <<SVC>> as SVC8
+	
+	DA8 -[#green]down->  DB8
+	SVC8 -[#green]down->  DA8
+}
+package "Videa.CuratedRating"{
+	database "CuratedRating.Db" as DB9
+	component "CuratedRating.Data" <<DAL>> as DA9
+	component "CuratedRating.Service" <<SVC>> as SVC9
+	
+	DA9 -[#green]down->  DB9
+	SVC9 -[#green]down->  DA9
+}
+package "Videa.RateCuration"{
+	component "RateCuration.Service" <<SVC>> as SVC10
+	
+}
+package "Videa.RatingCuration"{
+	component "RatingCuration.Service" <<SVC>> as SVC11
+	
+}
+}
+rectangle "Rating"{
+package "Videa.SellerRating"{
+	database "SellerRating.Db" as DB12
+	component "SellerRating.Data" <<DAL>> as DA12
+	component "SellerRating.Service" <<SVC>> as SVC12
+	
+	DA12 -[#green]down->  DB12
+	SVC12 -[#green]down->  DA12
+}
+}
+rectangle "Avail"{
+package "Videa.Avail"{
+	component "Avail.Service" <<SVC>> as SVC13
+	
+}
+package "Videa.AvailMart"{
+	database "AvailMart.Db" as DB14
+	component "AvailMart.Data" <<DAL>> as DA14
+	component "AvailMart.Service" <<SVC>> as SVC14
+	
+	DA14 -[#green]down->  DB14
+	SVC14 -[#green]down->  DA14
+}
+}
+rectangle "UI"{
+package "Videa.RateCardManager"{
+	component "RateCardManager.Service" <<SVC>> as SVC15
+	
+}
+}
+SVC4 -0)-> SVC5 : BulkStore()
+SVC4 -0)-> SVC1 : BulkStore()
+SVC4 -0)-> SVC12 : BulkStore()
+SVC5 -0)-> SVC7 : GetUnconfirmedInventory()
+SVC7 -0)-> SVC6 : BulkStore()
+SVC1 -0)-> SVC7 : GetSellerRatesByInventoryKeys()
+SVC12 -0)-> SVC7 : GetSellerRatingsByInventoryKeys()
+SVC3 -0)-> SVC10 : GetTrafficStatistics()
+SVC2 -0)-> SVC10 : GetSharebuilderRates()
+SVC1 -0)-> SVC10 : GetSellerRatesByInventoryKeys()
+SVC10 -0)-> SVC8 : BulkStore()
+SVC12 -0)-> SVC11 : GetSellerRatingsByInventoryKeys()
+SVC11 -0)-> SVC9 : GetConfirmedRatings()
+SVC3 -0)-> SVC13 : GetTrafficStatistics()
+SVC2 -0)-> SVC13 : GetSharebuilderRates()
+SVC1 -0)-> SVC13 : GetSellerRatesByInventoryKeys()
+SVC6 -0)-> SVC13 : GetConfirmedInventory()
+SVC8 -0)-> SVC13 : GetConfirmedRates()
+SVC9 -0)-> SVC13 : GetConfirmedRatings()
+SVC12 -0)-> SVC13 : GetSellerRatingsByInventoryKeys()
+SVC13 -0)-> SVC14 : BulkStore()
+SVC3 -0)-> SVC15 : GetTrafficStatistics()
+SVC2 -0)-> SVC15 : GetSharebuilderRates()
+SVC1 -0)-> SVC15 : GetSellerRatesByInventoryKeys()
+SVC6 -0)-> SVC15 : GetConfirmedInventory()
+SVC8 -0)-> SVC15 : GetConfirmedRates()
+SVC9 -0)-> SVC15 : GetConfirmedRatings()
+SVC12 -0)-> SVC15 : GetSellerRatingsByInventoryKeys()
+@enduml

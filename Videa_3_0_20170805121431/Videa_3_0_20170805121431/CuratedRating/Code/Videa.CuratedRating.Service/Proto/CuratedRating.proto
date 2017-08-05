@@ -1,0 +1,87 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+option csharp_namespace = "Videa.CuratedRatingNS.Service.Proto.Types";
+
+service CuratedRatingService {
+	rpc CuratedRatingDelete (CuratedRatingDeleteRequest) returns (CuratedRatingDeleteResponse) {}
+	rpc RatingTypeDelete (RatingTypeDeleteRequest) returns (RatingTypeDeleteResponse) {}
+	rpc CurationStatusDelete (CurationStatusDeleteRequest) returns (CurationStatusDeleteResponse) {}
+	rpc CuratedRatingAddUpdate (CuratedRatingAddUpdateRequest) returns (CuratedRatingAddUpdateResponse) {}
+	rpc RatingTypeAddUpdate (RatingTypeAddUpdateRequest) returns (RatingTypeAddUpdateResponse) {}
+	rpc CurationStatusAddUpdate (CurationStatusAddUpdateRequest) returns (CurationStatusAddUpdateResponse) {}
+	rpc GetConfirmedRatings (GetConfirmedRatingsRequest) returns (GetConfirmedRatingsResponse) {}
+	rpc BulkStore (BulkStoreRequest) returns (BulkStoreResponse) {}
+}
+message CuratedRating {
+	int64 CuratedRatingId = 1; // 
+	string SellableInventoryHashKey = 2; // 
+	string RatingHashKey = 3; // 
+	int32 RatingVersion = 4; // 
+	bool IsDynamicRating = 5; // 
+	string CuratingRatingValue = 6; // 
+	int32 RatingTypeId = 7; // 
+	int32 CurationStatusId = 8; // 
+	string CreatedBy = 9; // 
+	string ModifiedBy = 10; // 
+	google.protobuf.Timestamp RowVersion = 11; // 
+}
+message RatingType {
+	int32 RatingTypeId = 1; // 
+	string RatingTypeName = 2; // 
+	string RatingTypeDescription = 3; // 
+}
+message CurationStatus {
+	int32 CurationStatusId = 1; // 
+	string CurationStatusName = 2; // 
+	string CurationStatusDescription = 3; // 
+}
+message Rating {
+	int32 todo = 1; // 
+}
+message CuratedRatingDeleteRequest {
+	int64 CuratedRatingId = 1; // 
+}
+message CuratedRatingDeleteResponse {
+}
+message RatingTypeDeleteRequest {
+	int32 RatingTypeId = 1; // 
+}
+message RatingTypeDeleteResponse {
+}
+message CurationStatusDeleteRequest {
+	int32 CurationStatusId = 1; // 
+}
+message CurationStatusDeleteResponse {
+}
+message CuratedRatingAddUpdateRequest {
+	CuratedRating CuratedRating = 1; // 
+}
+message CuratedRatingAddUpdateResponse {
+}
+message RatingTypeAddUpdateRequest {
+	RatingType RatingType = 1; // 
+}
+message RatingTypeAddUpdateResponse {
+}
+message CurationStatusAddUpdateRequest {
+	CurationStatus CurationStatus = 1; // 
+}
+message CurationStatusAddUpdateResponse {
+}
+message GetConfirmedRatingsRequest {
+	string SellableInventoryList = 1; // 
+}
+message GetConfirmedRatingsResponse {
+	repeated Rating Rating = 1; // 
+}
+message BulkStoreRequest {
+	repeated CuratedRating CuratedRating = 1; // 
+	repeated RatingType RatingType = 2; // 
+	repeated CurationStatus CurationStatus = 3; // 
+	repeated Rating Rating = 4; // 
+}
+message BulkStoreResponse {
+}
+

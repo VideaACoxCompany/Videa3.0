@@ -1,0 +1,3709 @@
+﻿{
+  "ProtoSyntax": "proto3",
+  "Package": null,
+  "Import": [
+    "google/protobuf/timestamp.proto",
+    "google/protobuf/duration.proto"
+  ],
+  "ProtoService": [
+    {
+      "ServiceName": "AvailMartService",
+      "Rpc": [
+        {
+          "RpcName": "AvailMartDelete",
+          "Request": {
+            "MessageName": "AvailMartDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "AvailMartHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "AvailMartDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "AvailListDelete",
+          "Request": {
+            "MessageName": "AvailListDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "AvailListHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "AvailListDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "AvailLineWithDetailedPeriodsDelete",
+          "Request": {
+            "MessageName": "AvailLineWithDetailedPeriodsDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "AvailLineWithDetailedPeriodsHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "AvailLineWithDetailedPeriodsDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "DetailedPeriodDelete",
+          "Request": {
+            "MessageName": "DetailedPeriodDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "DetailedPeriodHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "DetailedPeriodDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "AvailMartAddUpdate",
+          "Request": {
+            "MessageName": "AvailMartAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "AvailMart",
+                "MessageType": "AvailMart",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "AvailMartAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "AvailListAddUpdate",
+          "Request": {
+            "MessageName": "AvailListAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "AvailList",
+                "MessageType": "AvailList",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "AvailListAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "AvailLineWithDetailedPeriodsAddUpdate",
+          "Request": {
+            "MessageName": "AvailLineWithDetailedPeriodsAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "AvailLineWithDetailedPeriods",
+                "MessageType": "AvailLineWithDetailedPeriods",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "AvailLineWithDetailedPeriodsAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "DetailedPeriodAddUpdate",
+          "Request": {
+            "MessageName": "DetailedPeriodAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "DetailedPeriod",
+                "MessageType": "DetailedPeriod",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "DetailedPeriodAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "GetAvailMart",
+          "Request": {
+            "MessageName": "GetAvailMartRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "StationHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              },
+              {
+                "FieldName": "RateCardTypeHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              },
+              {
+                "FieldName": "DaypartHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              },
+              {
+                "FieldName": "BroadcastWeekList",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "GetAvailMartResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "AvailMart",
+                "MessageType": "AvailMart",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "DtoName": "AvailMart"
+        },
+        {
+          "RpcName": "BulkStore",
+          "Request": {
+            "MessageName": "BulkStoreRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "AvailMart",
+                "MessageType": "AvailMart",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "AvailList",
+                "MessageType": "AvailList",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "AvailLineWithDetailedPeriods",
+                "MessageType": "AvailLineWithDetailedPeriods",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "DetailedPeriod",
+                "MessageType": "DetailedPeriod",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "BulkStoreResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        }
+      ]
+    }
+  ],
+  "ProtoMessage": [
+    {
+      "MessageName": "AvailMart",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "AvailMartHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "AvailMartSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "StartDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "EndDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "AvailList",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "AvailListHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "AvailListSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "AvailMartHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "Name",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "StartDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "EndDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "AvailLineWithDetailedPeriods",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "AvailLineWithDetailedPeriodsHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "AvailLineWithDetailedPeriodsSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "AvailListHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "DaypartName",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "AvailName",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "DetailedPeriod",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "DetailedPeriodHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "DetailedPeriodSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "AvailLineWithDetailedPeriodsHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "StartDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "EndDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "Rate",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    }
+  ],
+  "Option": [
+    "csharp_namespace = \"Videa.AvailMartNS.Service.Proto.Types\";"
+  ],
+  "OwnedByProject": {
+    "ProjectIs": 0,
+    "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreConsoleApp\\NetCoreConsoleApp.csproj",
+    "SolutionFolder": null,
+    "ProjectFolder": "Code\\Videa.AvailMart.Service",
+    "ProjectID": null,
+    "ProjectName": "Videa.AvailMart.Service",
+    "ProjectShortName": "AvailMart.Service",
+    "ProjectType": 0,
+    "FileName": "Videa.AvailMart.Service.csproj",
+    "ProjectGuid": "5998a753-ba99-1231-dfb8-b2237db9c56c",
+    "ProjectContent": [],
+    "Class": [],
+    "Interface": [],
+    "Path": null,
+    "DefaultNamespace": null,
+    "AssemblyName": "Videa.AvailMart.Service",
+    "ProjectReference": [
+      {
+        "ProjectIs": 2,
+        "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreClassLibrary\\NetCoreClassLibrary.csproj",
+        "SolutionFolder": null,
+        "ProjectFolder": "Code\\Videa.AvailMart.Data",
+        "ProjectID": null,
+        "ProjectName": "Videa.AvailMart.Data",
+        "ProjectShortName": "AvailMart.Data",
+        "ProjectType": 0,
+        "FileName": "Videa.AvailMart.Data.csproj",
+        "ProjectGuid": "a84a19a1-e458-6d16-2b33-c24c732210b0",
+        "ProjectContent": [
+          {
+            "Content": {
+              "InterfaceName": "IAvailMartDbProvider",
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": null
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Interface": {
+              "InterfaceName": "IAvailMartDbProvider",
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": null
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Class": null,
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "IAvailMartDbProvider.cs",
+              "Folder": "Providers",
+              "Path": "Providers\\IAvailMartDbProvider.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "AvailMartDbProvider",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "AvailMartDbProvider",
+                  "Parameter": [
+                    {
+                      "ParameterName": "connectionString",
+                      "Type": "string",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "return new SqlConnection(_connectionString);"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "_connectionString",
+                  "FieldType": "string",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": [
+                {
+                  "InterfaceName": "IAvailMartDbProvider",
+                  "Namespace": {
+                    "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+                  },
+                  "Method": [
+                    {
+                      "AccessModifier": 0,
+                      "SignatureOnly": true,
+                      "IsOverride": false,
+                      "IsAbstract": false,
+                      "IsStatic": false,
+                      "IsAsync": false,
+                      "IsExtensionMethod": false,
+                      "ReturnType": "IDbConnection",
+                      "ReferencesType": null,
+                      "MethodName": "GetConnection",
+                      "Parameter": [],
+                      "CodeSnippetFile": null,
+                      "CodeSnippet": null
+                    }
+                  ],
+                  "NamespaceRef": [
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data"
+                      }
+                    },
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data.SqlClient"
+                      }
+                    }
+                  ],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "AvailMartDbProvider",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "AvailMartDbProvider",
+                  "Parameter": [
+                    {
+                      "ParameterName": "connectionString",
+                      "Type": "string",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "return new SqlConnection(_connectionString);"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "_connectionString",
+                  "FieldType": "string",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": [
+                {
+                  "InterfaceName": "IAvailMartDbProvider",
+                  "Namespace": {
+                    "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+                  },
+                  "Method": [
+                    {
+                      "AccessModifier": 0,
+                      "SignatureOnly": true,
+                      "IsOverride": false,
+                      "IsAbstract": false,
+                      "IsStatic": false,
+                      "IsAsync": false,
+                      "IsExtensionMethod": false,
+                      "ReturnType": "IDbConnection",
+                      "ReferencesType": null,
+                      "MethodName": "GetConnection",
+                      "Parameter": [],
+                      "CodeSnippetFile": null,
+                      "CodeSnippet": null
+                    }
+                  ],
+                  "NamespaceRef": [
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data"
+                      }
+                    },
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data.SqlClient"
+                      }
+                    }
+                  ],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "AvailMartDbProvider.cs",
+              "Folder": "Providers",
+              "Path": "Providers\\AvailMartDbProvider.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": true,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 1,
+                  "ConstructorName": "BaseDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "IAvailMartDbProvider",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+                }
+              ],
+              "Method": [],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 1,
+                  "FieldName": "DbProvider",
+                  "FieldType": "IAvailMartDbProvider",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": true,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 1,
+                  "ConstructorName": "BaseDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "IAvailMartDbProvider",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+                }
+              ],
+              "Method": [],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 1,
+                  "FieldName": "DbProvider",
+                  "FieldType": "IAvailMartDbProvider",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "BaseDataService.cs",
+              "Folder": "DataServices\\Base",
+              "Path": "DataServices\\Base\\BaseDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "AvailMart",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailMartHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailMartSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "StartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "EndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "AvailMart",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailMartHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailMartSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "StartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "EndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "AvailMart.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\AvailMart.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "AvailList",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailListHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailListSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailMartHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "Name",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "StartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "EndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "AvailList",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailListHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailListSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailMartHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "Name",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "StartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "EndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "AvailList.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\AvailList.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "AvailLineWithDetailedPeriods",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailLineWithDetailedPeriodsHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailLineWithDetailedPeriodsSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailListHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "DaypartName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "AvailLineWithDetailedPeriods",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailLineWithDetailedPeriodsHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailLineWithDetailedPeriodsSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailListHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "DaypartName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "AvailLineWithDetailedPeriods.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\AvailLineWithDetailedPeriods.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "DetailedPeriod",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "DetailedPeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "DetailedPeriodSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailLineWithDetailedPeriodsHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "StartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "EndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "Rate",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "DetailedPeriod",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "DetailedPeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "DetailedPeriodSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "AvailLineWithDetailedPeriodsHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "StartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "EndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "Rate",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "DetailedPeriod.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\DetailedPeriod.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "InterfaceName": "IAvailMartDataService",
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailMartDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availmarthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmarthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailListDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlisthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlisthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailLineWithDetailedPeriodsDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlinewithdetailedperiodshashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiodshashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "DetailedPeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "detailedperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailMartAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availmart",
+                      "Type": "AvailMart",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmart.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartSqn\",availmart.AvailMartSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availmart.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availmart.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailListAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlist",
+                      "Type": "AvailList",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlist.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailListSqn\",availlist.AvailListSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availlist.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@Name\",availlist.Name, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availlist.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availlist.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailLineWithDetailedPeriodsAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlinewithdetailedperiods",
+                      "Type": "AvailLineWithDetailedPeriods",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsSqn\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlinewithdetailedperiods.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DaypartName\",availlinewithdetailedperiods.DaypartName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@AvailName\",availlinewithdetailedperiods.AvailName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "DetailedPeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "detailedperiod",
+                      "Type": "DetailedPeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiod.DetailedPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodSqn\",detailedperiod.DetailedPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",detailedperiod.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",detailedperiod.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",detailedperiod.EndDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@Rate\",detailedperiod.Rate, DbType.Decimal);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<AvailMart>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetAvailMart",
+                  "Parameter": [
+                    {
+                      "ParameterName": "stationhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "ratecardtypehashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "dayparthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "broadcastweeklist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@StationHashKey\",stationhashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@RateCardTypeHashKey\",ratecardtypehashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@DaypartHashKey\",dayparthashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@BroadcastWeekList\",broadcastweeklist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<AvailMart>(\r\n\t\t\t\t     \"AvailMartApi.GetAvailMart\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Interface": {
+              "InterfaceName": "IAvailMartDataService",
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailMartDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availmarthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmarthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailListDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlisthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlisthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailLineWithDetailedPeriodsDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlinewithdetailedperiodshashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiodshashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "DetailedPeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "detailedperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailMartAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availmart",
+                      "Type": "AvailMart",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmart.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartSqn\",availmart.AvailMartSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availmart.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availmart.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailListAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlist",
+                      "Type": "AvailList",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlist.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailListSqn\",availlist.AvailListSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availlist.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@Name\",availlist.Name, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availlist.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availlist.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailLineWithDetailedPeriodsAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlinewithdetailedperiods",
+                      "Type": "AvailLineWithDetailedPeriods",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsSqn\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlinewithdetailedperiods.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DaypartName\",availlinewithdetailedperiods.DaypartName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@AvailName\",availlinewithdetailedperiods.AvailName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "DetailedPeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "detailedperiod",
+                      "Type": "DetailedPeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiod.DetailedPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodSqn\",detailedperiod.DetailedPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",detailedperiod.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",detailedperiod.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",detailedperiod.EndDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@Rate\",detailedperiod.Rate, DbType.Decimal);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<AvailMart>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetAvailMart",
+                  "Parameter": [
+                    {
+                      "ParameterName": "stationhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "ratecardtypehashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "dayparthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "broadcastweeklist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@StationHashKey\",stationhashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@RateCardTypeHashKey\",ratecardtypehashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@DaypartHashKey\",dayparthashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@BroadcastWeekList\",broadcastweeklist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<AvailMart>(\r\n\t\t\t\t     \"AvailMartApi.GetAvailMart\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Class": null,
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "IAvailMartDataService.cs",
+              "Folder": "DataServices",
+              "Path": "DataServices\\IAvailMartDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Linq"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Dapper"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "AvailMartDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "AvailMartDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "IAvailMartDbProvider",
+                      "PassToBaseClass": true
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "//empty constructor"
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailMartDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availmarthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmarthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailListDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlisthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlisthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailLineWithDetailedPeriodsDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlinewithdetailedperiodshashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiodshashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "DetailedPeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "detailedperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailMartAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availmart",
+                      "Type": "AvailMart",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmart.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartSqn\",availmart.AvailMartSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availmart.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availmart.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailListAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlist",
+                      "Type": "AvailList",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlist.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailListSqn\",availlist.AvailListSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availlist.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@Name\",availlist.Name, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availlist.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availlist.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailLineWithDetailedPeriodsAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlinewithdetailedperiods",
+                      "Type": "AvailLineWithDetailedPeriods",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsSqn\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlinewithdetailedperiods.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DaypartName\",availlinewithdetailedperiods.DaypartName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@AvailName\",availlinewithdetailedperiods.AvailName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "DetailedPeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "detailedperiod",
+                      "Type": "DetailedPeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiod.DetailedPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodSqn\",detailedperiod.DetailedPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",detailedperiod.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",detailedperiod.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",detailedperiod.EndDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@Rate\",detailedperiod.Rate, DbType.Decimal);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<AvailMart>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetAvailMart",
+                  "Parameter": [
+                    {
+                      "ParameterName": "stationhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "ratecardtypehashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "dayparthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "broadcastweeklist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@StationHashKey\",stationhashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@RateCardTypeHashKey\",ratecardtypehashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@DaypartHashKey\",dayparthashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@BroadcastWeekList\",broadcastweeklist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<AvailMart>(\r\n\t\t\t\t     \"AvailMartApi.GetAvailMart\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageNumber",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                },
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageSize",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": {
+                "NamespaceRef": [],
+                "AccessModifier": 0,
+                "IsAbstract": false,
+                "Namespace": null,
+                "IsStatic": false,
+                "ClassName": "BaseDataService",
+                "Constructor": [],
+                "Method": [],
+                "Property": [],
+                "Field": [],
+                "InheritsFrom": null,
+                "Implements": []
+              },
+              "Implements": [
+                {
+                  "InterfaceName": "IAvailMartDataService",
+                  "Namespace": null,
+                  "Method": [],
+                  "NamespaceRef": [],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Linq"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Dapper"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "AvailMartDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "AvailMartDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "IAvailMartDbProvider",
+                      "PassToBaseClass": true
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "//empty constructor"
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailMartDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availmarthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmarthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailListDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlisthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlisthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailLineWithDetailedPeriodsDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlinewithdetailedperiodshashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiodshashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "DetailedPeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "detailedperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailMartAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availmart",
+                      "Type": "AvailMart",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmart.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartSqn\",availmart.AvailMartSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availmart.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availmart.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailListAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlist",
+                      "Type": "AvailList",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlist.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailListSqn\",availlist.AvailListSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availlist.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@Name\",availlist.Name, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availlist.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availlist.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "AvailLineWithDetailedPeriodsAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "availlinewithdetailedperiods",
+                      "Type": "AvailLineWithDetailedPeriods",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsSqn\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlinewithdetailedperiods.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DaypartName\",availlinewithdetailedperiods.DaypartName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@AvailName\",availlinewithdetailedperiods.AvailName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "DetailedPeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "detailedperiod",
+                      "Type": "DetailedPeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiod.DetailedPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodSqn\",detailedperiod.DetailedPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",detailedperiod.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",detailedperiod.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",detailedperiod.EndDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@Rate\",detailedperiod.Rate, DbType.Decimal);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<AvailMart>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetAvailMart",
+                  "Parameter": [
+                    {
+                      "ParameterName": "stationhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "ratecardtypehashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "dayparthashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    },
+                    {
+                      "ParameterName": "broadcastweeklist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@StationHashKey\",stationhashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@RateCardTypeHashKey\",ratecardtypehashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@DaypartHashKey\",dayparthashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@BroadcastWeekList\",broadcastweeklist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<AvailMart>(\r\n\t\t\t\t     \"AvailMartApi.GetAvailMart\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageNumber",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                },
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageSize",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": {
+                "NamespaceRef": [],
+                "AccessModifier": 0,
+                "IsAbstract": false,
+                "Namespace": null,
+                "IsStatic": false,
+                "ClassName": "BaseDataService",
+                "Constructor": [],
+                "Method": [],
+                "Property": [],
+                "Field": [],
+                "InheritsFrom": null,
+                "Implements": []
+              },
+              "Implements": [
+                {
+                  "InterfaceName": "IAvailMartDataService",
+                  "Namespace": null,
+                  "Method": [],
+                  "NamespaceRef": [],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "AvailMartDataService.cs",
+              "Folder": "DataServices",
+              "Path": "DataServices\\AvailMartDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          }
+        ],
+        "Class": [
+          {
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              }
+            ],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "AvailMartDbProvider",
+            "Constructor": [
+              {
+                "AccessModifier": 0,
+                "ConstructorName": "AvailMartDbProvider",
+                "Parameter": [
+                  {
+                    "ParameterName": "connectionString",
+                    "Type": "string",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+              }
+            ],
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "IDbConnection",
+                "ReferencesType": null,
+                "MethodName": "GetConnection",
+                "Parameter": [],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "return new SqlConnection(_connectionString);"
+              }
+            ],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 2,
+                "FieldName": "_connectionString",
+                "FieldType": "string",
+                "ReferencesType": null,
+                "IsReadonly": true,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": null,
+            "Implements": [
+              {
+                "InterfaceName": "IAvailMartDbProvider",
+                "Namespace": {
+                  "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+                },
+                "Method": [
+                  {
+                    "AccessModifier": 0,
+                    "SignatureOnly": true,
+                    "IsOverride": false,
+                    "IsAbstract": false,
+                    "IsStatic": false,
+                    "IsAsync": false,
+                    "IsExtensionMethod": false,
+                    "ReturnType": "IDbConnection",
+                    "ReferencesType": null,
+                    "MethodName": "GetConnection",
+                    "Parameter": [],
+                    "CodeSnippetFile": null,
+                    "CodeSnippet": null
+                  }
+                ],
+                "NamespaceRef": [
+                  {
+                    "ReferenceTo": {
+                      "NamespaceName": "System.Data"
+                    }
+                  },
+                  {
+                    "ReferenceTo": {
+                      "NamespaceName": "System.Data.SqlClient"
+                    }
+                  }
+                ],
+                "InheritsFrom": null,
+                "IsGeneric": false
+              }
+            ]
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": true,
+            "Namespace": {
+              "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "BaseDataService",
+            "Constructor": [
+              {
+                "AccessModifier": 1,
+                "ConstructorName": "BaseDataService",
+                "Parameter": [
+                  {
+                    "ParameterName": "dbProvider",
+                    "Type": "IAvailMartDbProvider",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+              }
+            ],
+            "Method": [],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 1,
+                "FieldName": "DbProvider",
+                "FieldType": "IAvailMartDbProvider",
+                "ReferencesType": null,
+                "IsReadonly": true,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "AvailMart",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "AvailMartHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "AvailMartSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "StartDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "EndDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "AvailList",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "AvailListHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "AvailListSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "AvailMartHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "Name",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "StartDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "EndDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "AvailLineWithDetailedPeriods",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "AvailLineWithDetailedPeriodsHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "AvailLineWithDetailedPeriodsSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "AvailListHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "DaypartName",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "AvailName",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "DetailedPeriod",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "DetailedPeriodHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "DetailedPeriodSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "AvailLineWithDetailedPeriodsHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "StartDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "EndDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "Rate",
+                "Type": "Decimal",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Linq"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Collections.Generic"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Threading.Tasks"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Dapper"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+                }
+              }
+            ],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "AvailMartDataService",
+            "Constructor": [
+              {
+                "AccessModifier": 0,
+                "ConstructorName": "AvailMartDataService",
+                "Parameter": [
+                  {
+                    "ParameterName": "dbProvider",
+                    "Type": "IAvailMartDbProvider",
+                    "PassToBaseClass": true
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "//empty constructor"
+              }
+            ],
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailMartDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "availmarthashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmarthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailListDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "availlisthashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlisthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailLineWithDetailedPeriodsDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "availlinewithdetailedperiodshashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiodshashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "DetailedPeriodDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "detailedperiodhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailMartAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "availmart",
+                    "Type": "AvailMart",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmart.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartSqn\",availmart.AvailMartSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availmart.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availmart.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailListAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "availlist",
+                    "Type": "AvailList",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlist.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailListSqn\",availlist.AvailListSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availlist.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@Name\",availlist.Name, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availlist.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availlist.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailLineWithDetailedPeriodsAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "availlinewithdetailedperiods",
+                    "Type": "AvailLineWithDetailedPeriods",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsSqn\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlinewithdetailedperiods.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DaypartName\",availlinewithdetailedperiods.DaypartName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@AvailName\",availlinewithdetailedperiods.AvailName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "DetailedPeriodAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "detailedperiod",
+                    "Type": "DetailedPeriod",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiod.DetailedPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodSqn\",detailedperiod.DetailedPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",detailedperiod.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",detailedperiod.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",detailedperiod.EndDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@Rate\",detailedperiod.Rate, DbType.Decimal);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<AvailMart>>",
+                "ReferencesType": null,
+                "MethodName": "GetAvailMart",
+                "Parameter": [
+                  {
+                    "ParameterName": "stationhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  },
+                  {
+                    "ParameterName": "ratecardtypehashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  },
+                  {
+                    "ParameterName": "dayparthashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  },
+                  {
+                    "ParameterName": "broadcastweeklist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@StationHashKey\",stationhashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@RateCardTypeHashKey\",ratecardtypehashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@DaypartHashKey\",dayparthashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@BroadcastWeekList\",broadcastweeklist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<AvailMart>(\r\n\t\t\t\t     \"AvailMartApi.GetAvailMart\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              }
+            ],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 2,
+                "FieldName": "DefaultPageNumber",
+                "FieldType": "int",
+                "ReferencesType": null,
+                "IsReadonly": false,
+                "IsConst": false,
+                "IsStatic": false
+              },
+              {
+                "AccessModifier": 2,
+                "FieldName": "DefaultPageSize",
+                "FieldType": "int",
+                "ReferencesType": null,
+                "IsReadonly": false,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": null,
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [],
+              "Method": [],
+              "Property": [],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Implements": [
+              {
+                "InterfaceName": "IAvailMartDataService",
+                "Namespace": null,
+                "Method": [],
+                "NamespaceRef": [],
+                "InheritsFrom": null,
+                "IsGeneric": false
+              }
+            ]
+          }
+        ],
+        "Interface": [
+          {
+            "InterfaceName": "IAvailMartDbProvider",
+            "Namespace": {
+              "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+            },
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "IDbConnection",
+                "ReferencesType": null,
+                "MethodName": "GetConnection",
+                "Parameter": [],
+                "CodeSnippetFile": null,
+                "CodeSnippet": null
+              }
+            ],
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              }
+            ],
+            "InheritsFrom": null,
+            "IsGeneric": false
+          },
+          {
+            "InterfaceName": "IAvailMartDataService",
+            "Namespace": {
+              "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+            },
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailMartDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "availmarthashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmarthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailListDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "availlisthashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlisthashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailLineWithDetailedPeriodsDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "availlinewithdetailedperiodshashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiodshashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "DetailedPeriodDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "detailedperiodhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailMartAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "availmart",
+                    "Type": "AvailMart",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availmart.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartSqn\",availmart.AvailMartSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availmart.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availmart.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailMartAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailListAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "availlist",
+                    "Type": "AvailList",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlist.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailListSqn\",availlist.AvailListSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailMartHashKey\",availlist.AvailMartHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@Name\",availlist.Name, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",availlist.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",availlist.EndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailListAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "AvailLineWithDetailedPeriodsAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "availlinewithdetailedperiods",
+                    "Type": "AvailLineWithDetailedPeriods",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsSqn\",availlinewithdetailedperiods.AvailLineWithDetailedPeriodsSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailListHashKey\",availlinewithdetailedperiods.AvailListHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DaypartName\",availlinewithdetailedperiods.DaypartName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@AvailName\",availlinewithdetailedperiods.AvailName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.AvailLineWithDetailedPeriodsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "DetailedPeriodAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "detailedperiod",
+                    "Type": "DetailedPeriod",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodHashKey\",detailedperiod.DetailedPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@DetailedPeriodSqn\",detailedperiod.DetailedPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@AvailLineWithDetailedPeriodsHashKey\",detailedperiod.AvailLineWithDetailedPeriodsHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@StartDate\",detailedperiod.StartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@EndDate\",detailedperiod.EndDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@Rate\",detailedperiod.Rate, DbType.Decimal);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"AMApi.DetailedPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<AvailMart>>",
+                "ReferencesType": null,
+                "MethodName": "GetAvailMart",
+                "Parameter": [
+                  {
+                    "ParameterName": "stationhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  },
+                  {
+                    "ParameterName": "ratecardtypehashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  },
+                  {
+                    "ParameterName": "dayparthashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  },
+                  {
+                    "ParameterName": "broadcastweeklist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@StationHashKey\",stationhashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@RateCardTypeHashKey\",ratecardtypehashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@DaypartHashKey\",dayparthashkey, DbType.String);\r\n\t\t\t\tsqlParams.Add(\"@BroadcastWeekList\",broadcastweeklist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<AvailMart>(\r\n\t\t\t\t     \"AvailMartApi.GetAvailMart\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              }
+            ],
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Collections.Generic"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Threading.Tasks"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Videa.AvailMartNS.Data.DataServices"
+                }
+              }
+            ],
+            "InheritsFrom": null,
+            "IsGeneric": false
+          }
+        ],
+        "Path": null,
+        "DefaultNamespace": null,
+        "AssemblyName": "Videa.AvailMart.Data",
+        "ProjectReference": [],
+        "NuGetReference": [
+          {
+            "NuGetName": "Dapper",
+            "Version": "1.50.2"
+          }
+        ],
+        "PostBuildEventStep": []
+      }
+    ],
+    "NuGetReference": [],
+    "PostBuildEventStep": []
+  }
+}

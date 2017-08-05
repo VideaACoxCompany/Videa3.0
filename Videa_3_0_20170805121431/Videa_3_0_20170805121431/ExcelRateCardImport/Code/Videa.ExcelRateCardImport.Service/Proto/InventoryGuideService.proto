@@ -1,0 +1,244 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+option csharp_namespace = "Videa.InventoryGuideNS.Service.Proto.Types";
+
+service InventoryGuideService {
+	rpc SellingTitleDelete (SellingTitleDeleteRequest) returns (SellingTitleDeleteResponse) {}
+	rpc StationDelete (StationDeleteRequest) returns (StationDeleteResponse) {}
+	rpc StationGroupDelete (StationGroupDeleteRequest) returns (StationGroupDeleteResponse) {}
+	rpc RateCardDelete (RateCardDeleteRequest) returns (RateCardDeleteResponse) {}
+	rpc RateCardDaypartDelete (RateCardDaypartDeleteRequest) returns (RateCardDaypartDeleteResponse) {}
+	rpc RateCardTypeDelete (RateCardTypeDeleteRequest) returns (RateCardTypeDeleteResponse) {}
+	rpc SellingTitleTimeRangeDelete (SellingTitleTimeRangeDeleteRequest) returns (SellingTitleTimeRangeDeleteResponse) {}
+	rpc SellingTitleDaysOfWeekDelete (SellingTitleDaysOfWeekDeleteRequest) returns (SellingTitleDaysOfWeekDeleteResponse) {}
+	rpc RatePeriodDelete (RatePeriodDeleteRequest) returns (RatePeriodDeleteResponse) {}
+	rpc SellableInventoryDelete (SellableInventoryDeleteRequest) returns (SellableInventoryDeleteResponse) {}
+	rpc SellingTitleAddUpdate (SellingTitleAddUpdateRequest) returns (SellingTitleAddUpdateResponse) {}
+	rpc StationAddUpdate (StationAddUpdateRequest) returns (StationAddUpdateResponse) {}
+	rpc StationGroupAddUpdate (StationGroupAddUpdateRequest) returns (StationGroupAddUpdateResponse) {}
+	rpc RateCardAddUpdate (RateCardAddUpdateRequest) returns (RateCardAddUpdateResponse) {}
+	rpc RateCardDaypartAddUpdate (RateCardDaypartAddUpdateRequest) returns (RateCardDaypartAddUpdateResponse) {}
+	rpc RateCardTypeAddUpdate (RateCardTypeAddUpdateRequest) returns (RateCardTypeAddUpdateResponse) {}
+	rpc SellingTitleTimeRangeAddUpdate (SellingTitleTimeRangeAddUpdateRequest) returns (SellingTitleTimeRangeAddUpdateResponse) {}
+	rpc SellingTitleDaysOfWeekAddUpdate (SellingTitleDaysOfWeekAddUpdateRequest) returns (SellingTitleDaysOfWeekAddUpdateResponse) {}
+	rpc RatePeriodAddUpdate (RatePeriodAddUpdateRequest) returns (RatePeriodAddUpdateResponse) {}
+	rpc SellableInventoryAddUpdate (SellableInventoryAddUpdateRequest) returns (SellableInventoryAddUpdateResponse) {}
+	rpc GetRateCardsByStation (GetRateCardsByStationRequest) returns (GetRateCardsByStationResponse) {}
+	rpc GetRateCardsByDateRange (GetRateCardsByDateRangeRequest) returns (GetRateCardsByDateRangeResponse) {}
+	rpc GetUnconfirmedInventory (GetUnconfirmedInventoryRequest) returns (GetUnconfirmedInventoryResponse) {}
+	rpc BulkStore (BulkStoreRequest) returns (BulkStoreResponse) {}
+}
+message SellingTitle {
+	string SellingTitleHashKey = 1; // 
+	int32 SellingTitleSqn = 2; // 
+	string SellingTitleName = 3; // 
+	google.protobuf.Timestamp SellingTitleStartDate = 4; // 
+	google.protobuf.Timestamp SellingTitleEndDate = 5; // 
+}
+message Station {
+	string StationHashKey = 1; // 
+	int32 StationSqn = 2; // 
+	string StationName = 3; // 
+	string StationCallLetters = 4; // 
+}
+message StationGroup {
+	string StationGroupHashKey = 1; // 
+	int32 StationGroupSqn = 2; // 
+	string StationGroupName = 3; // 
+}
+message RateCard {
+	string RateCardHashKey = 1; // 
+	int32 RateCardSqn = 2; // 
+	string RateCardName = 3; // 
+	google.protobuf.Timestamp RateCardStartDate = 4; // 
+	google.protobuf.Timestamp RateCardEndDate = 5; // 
+}
+message RateCardDaypart {
+	string RateCardDaypartHashKey = 1; // 
+	int32 RateCardDaypartSqn = 2; // 
+	string RateCardDaypartName = 3; // 
+}
+message RateCardType {
+	string RateCardTypeHashKey = 1; // 
+	int32 RateCardTypeSqn = 2; // 
+	string RateCardTypeName = 3; // 
+}
+message SellingTitleTimeRange {
+	string SellingTitleTimeRangeHashKey = 1; // 
+	int32 TimeRangeSqn = 2; // 
+	string SellingTitleTimeRangeName = 3; // 
+}
+message SellingTitleDaysOfWeek {
+	string SellingTitleDaysOfWeekHashKey = 1; // 
+	int32 SellingTitleDaysOfWeekSqn = 2; // 
+	string SellingTitleDaysOfWeekName = 3; // 
+	bool Mon = 4; // 
+	bool Tue = 5; // 
+	bool Wed = 6; // 
+	bool Thu = 7; // 
+	bool Fri = 8; // 
+	bool Sat = 9; // 
+	bool Sun = 10; // 
+}
+message RatePeriod {
+	string RatePeriodHashKey = 1; // 
+	int32 RatePeriodSqn = 2; // 
+	string RatePeriodName = 3; // 
+	google.protobuf.Timestamp RatePeriodStartDate = 4; // 
+	google.protobuf.Timestamp RatePeriodEndDate = 5; // 
+}
+message SellableInventory {
+	string SellableInventoryHashKey = 1; // 
+	int32 SellableInventorySqn = 2; // 
+	string StationHashKey = 3; // 
+	string StationGroupHashKey = 4; // 
+	string RateCardHashKey = 5; // 
+	string RateCardDaypartHashKey = 6; // 
+	string RateCardTypeHashKey = 7; // 
+	string SellingTitleHashKey = 8; // 
+	string SellingTitleDaysOfWeekHashKey = 9; // 
+	string SellingTitleTimeRangeHashKey = 10; // 
+	string RatePeriodHashKey = 11; // 
+}
+message SellableInventoryDto {
+}
+message SellingTitleDeleteRequest {
+	string SellingTitleHashKey = 1; // 
+}
+message SellingTitleDeleteResponse {
+}
+message StationDeleteRequest {
+	string StationHashKey = 1; // 
+}
+message StationDeleteResponse {
+}
+message StationGroupDeleteRequest {
+	string StationGroupHashKey = 1; // 
+}
+message StationGroupDeleteResponse {
+}
+message RateCardDeleteRequest {
+	string RateCardHashKey = 1; // 
+}
+message RateCardDeleteResponse {
+}
+message RateCardDaypartDeleteRequest {
+	string RateCardDaypartHashKey = 1; // 
+}
+message RateCardDaypartDeleteResponse {
+}
+message RateCardTypeDeleteRequest {
+	string RateCardTypeHashKey = 1; // 
+}
+message RateCardTypeDeleteResponse {
+}
+message SellingTitleTimeRangeDeleteRequest {
+	string SellingTitleTimeRangeHashKey = 1; // 
+}
+message SellingTitleTimeRangeDeleteResponse {
+}
+message SellingTitleDaysOfWeekDeleteRequest {
+	string SellingTitleDaysOfWeekHashKey = 1; // 
+}
+message SellingTitleDaysOfWeekDeleteResponse {
+}
+message RatePeriodDeleteRequest {
+	string RatePeriodHashKey = 1; // 
+}
+message RatePeriodDeleteResponse {
+}
+message SellableInventoryDeleteRequest {
+	string SellableInventoryHashKey = 1; // 
+}
+message SellableInventoryDeleteResponse {
+}
+message SellingTitleAddUpdateRequest {
+	SellingTitle SellingTitle = 1; // 
+}
+message SellingTitleAddUpdateResponse {
+}
+message StationAddUpdateRequest {
+	Station Station = 1; // 
+}
+message StationAddUpdateResponse {
+}
+message StationGroupAddUpdateRequest {
+	StationGroup StationGroup = 1; // 
+}
+message StationGroupAddUpdateResponse {
+}
+message RateCardAddUpdateRequest {
+	RateCard RateCard = 1; // 
+}
+message RateCardAddUpdateResponse {
+}
+message RateCardDaypartAddUpdateRequest {
+	RateCardDaypart RateCardDaypart = 1; // 
+}
+message RateCardDaypartAddUpdateResponse {
+}
+message RateCardTypeAddUpdateRequest {
+	RateCardType RateCardType = 1; // 
+}
+message RateCardTypeAddUpdateResponse {
+}
+message SellingTitleTimeRangeAddUpdateRequest {
+	SellingTitleTimeRange SellingTitleTimeRange = 1; // 
+}
+message SellingTitleTimeRangeAddUpdateResponse {
+}
+message SellingTitleDaysOfWeekAddUpdateRequest {
+	SellingTitleDaysOfWeek SellingTitleDaysOfWeek = 1; // 
+}
+message SellingTitleDaysOfWeekAddUpdateResponse {
+}
+message RatePeriodAddUpdateRequest {
+	RatePeriod RatePeriod = 1; // 
+}
+message RatePeriodAddUpdateResponse {
+}
+message SellableInventoryAddUpdateRequest {
+	SellableInventory SellableInventory = 1; // 
+}
+message SellableInventoryAddUpdateResponse {
+}
+message GetRateCardsByStationRequest {
+	string StationHashKey = 1; // 
+}
+message GetRateCardsByStationResponse {
+	repeated RateCard RateCard = 1; // 
+}
+message GetRateCardsByDateRangeRequest {
+	google.protobuf.Timestamp StartDate = 1; // 
+	google.protobuf.Timestamp EndDate = 2; // 
+}
+message GetRateCardsByDateRangeResponse {
+	repeated RateCard RateCard = 1; // 
+}
+message GetUnconfirmedInventoryRequest {
+	string StationHashKey = 1; // 
+	string RateCardTypeHashKey = 2; // 
+	string RateCardDaypartHashKey = 3; // 
+	string BroadcastWeekList = 4; // 
+}
+message GetUnconfirmedInventoryResponse {
+	repeated SellableInventoryDto SellableInventoryDto = 1; // 
+}
+message BulkStoreRequest {
+	repeated SellingTitle SellingTitle = 1; // 
+	repeated Station Station = 2; // 
+	repeated StationGroup StationGroup = 3; // 
+	repeated RateCard RateCard = 4; // 
+	repeated RateCardDaypart RateCardDaypart = 5; // 
+	repeated RateCardType RateCardType = 6; // 
+	repeated SellingTitleTimeRange SellingTitleTimeRange = 7; // 
+	repeated SellingTitleDaysOfWeek SellingTitleDaysOfWeek = 8; // 
+	repeated RatePeriod RatePeriod = 9; // 
+	repeated SellableInventory SellableInventory = 10; // 
+	repeated SellableInventoryDto SellableInventoryDto = 11; // 
+}
+message BulkStoreResponse {
+}
+

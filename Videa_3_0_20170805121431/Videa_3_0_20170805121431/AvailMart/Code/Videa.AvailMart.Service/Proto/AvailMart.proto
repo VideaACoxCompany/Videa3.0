@@ -1,0 +1,105 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+option csharp_namespace = "Videa.AvailMartNS.Service.Proto.Types";
+
+service AvailMartService {
+	rpc AvailMartDelete (AvailMartDeleteRequest) returns (AvailMartDeleteResponse) {}
+	rpc AvailListDelete (AvailListDeleteRequest) returns (AvailListDeleteResponse) {}
+	rpc AvailLineWithDetailedPeriodsDelete (AvailLineWithDetailedPeriodsDeleteRequest) returns (AvailLineWithDetailedPeriodsDeleteResponse) {}
+	rpc DetailedPeriodDelete (DetailedPeriodDeleteRequest) returns (DetailedPeriodDeleteResponse) {}
+	rpc AvailMartAddUpdate (AvailMartAddUpdateRequest) returns (AvailMartAddUpdateResponse) {}
+	rpc AvailListAddUpdate (AvailListAddUpdateRequest) returns (AvailListAddUpdateResponse) {}
+	rpc AvailLineWithDetailedPeriodsAddUpdate (AvailLineWithDetailedPeriodsAddUpdateRequest) returns (AvailLineWithDetailedPeriodsAddUpdateResponse) {}
+	rpc DetailedPeriodAddUpdate (DetailedPeriodAddUpdateRequest) returns (DetailedPeriodAddUpdateResponse) {}
+	rpc GetAvailMart (GetAvailMartRequest) returns (GetAvailMartResponse) {}
+	rpc BulkStore (BulkStoreRequest) returns (BulkStoreResponse) {}
+}
+message AvailMart {
+	string AvailMartHashKey = 1; // 
+	int32 AvailMartSqn = 2; // 
+	google.protobuf.Timestamp StartDate = 3; // 
+	google.protobuf.Timestamp EndDate = 4; // 
+}
+message AvailList {
+	string AvailListHashKey = 1; // 
+	int32 AvailListSqn = 2; // 
+	string AvailMartHashKey = 3; // 
+	string Name = 4; // 
+	google.protobuf.Timestamp StartDate = 5; // 
+	google.protobuf.Timestamp EndDate = 6; // 
+}
+message AvailLineWithDetailedPeriods {
+	string AvailLineWithDetailedPeriodsHashKey = 1; // 
+	int32 AvailLineWithDetailedPeriodsSqn = 2; // 
+	string AvailListHashKey = 3; // 
+	string DaypartName = 4; // 
+	string AvailName = 5; // 
+}
+message DetailedPeriod {
+	string DetailedPeriodHashKey = 1; // 
+	int32 DetailedPeriodSqn = 2; // 
+	string AvailLineWithDetailedPeriodsHashKey = 3; // 
+	google.protobuf.Timestamp StartDate = 4; // 
+	google.protobuf.Timestamp EndDate = 5; // 
+	string Rate = 6; // 
+}
+message AvailMartDeleteRequest {
+	string AvailMartHashKey = 1; // 
+}
+message AvailMartDeleteResponse {
+}
+message AvailListDeleteRequest {
+	string AvailListHashKey = 1; // 
+}
+message AvailListDeleteResponse {
+}
+message AvailLineWithDetailedPeriodsDeleteRequest {
+	string AvailLineWithDetailedPeriodsHashKey = 1; // 
+}
+message AvailLineWithDetailedPeriodsDeleteResponse {
+}
+message DetailedPeriodDeleteRequest {
+	string DetailedPeriodHashKey = 1; // 
+}
+message DetailedPeriodDeleteResponse {
+}
+message AvailMartAddUpdateRequest {
+	AvailMart AvailMart = 1; // 
+}
+message AvailMartAddUpdateResponse {
+}
+message AvailListAddUpdateRequest {
+	AvailList AvailList = 1; // 
+}
+message AvailListAddUpdateResponse {
+}
+message AvailLineWithDetailedPeriodsAddUpdateRequest {
+	AvailLineWithDetailedPeriods AvailLineWithDetailedPeriods = 1; // 
+}
+message AvailLineWithDetailedPeriodsAddUpdateResponse {
+}
+message DetailedPeriodAddUpdateRequest {
+	DetailedPeriod DetailedPeriod = 1; // 
+}
+message DetailedPeriodAddUpdateResponse {
+}
+message GetAvailMartRequest {
+	string StationHashKey = 1; // 
+	string RateCardTypeHashKey = 2; // 
+	string DaypartHashKey = 3; // 
+	string BroadcastWeekList = 4; // 
+}
+message GetAvailMartResponse {
+	repeated AvailMart AvailMart = 1; // 
+}
+message BulkStoreRequest {
+	repeated AvailMart AvailMart = 1; // 
+	repeated AvailList AvailList = 2; // 
+	repeated AvailLineWithDetailedPeriods AvailLineWithDetailedPeriods = 3; // 
+	repeated DetailedPeriod DetailedPeriod = 4; // 
+}
+message BulkStoreResponse {
+}
+

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Videa.InventoryGuide.Db", "Code\Videa.InventoryGuide.Db\Videa.InventoryGuide.Db.sqlproj", "{57086FA1-475B-0E1F-456E-8738FD5342D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videa.InventoryGuide.Data", "Code\Videa.InventoryGuide.Data\Videa.InventoryGuide.Data.csproj", "{A41DFCD1-C37E-43AC-B809-61722D16CB68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videa.InventoryGuide.Service", "Code\Videa.InventoryGuide.Service\Videa.InventoryGuide.Service.csproj", "{82115409-98A8-4143-99D0-8504771AAB5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videa.InventoryGuide.Service.TestClient", "Code\Videa.InventoryGuide.Service.TestClient\Videa.InventoryGuide.Service.TestClient.csproj", "{BBF4AAF2-A211-49E9-B06A-C374E3D965ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57086FA1-475B-0E1F-456E-8738FD5342D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57086FA1-475B-0E1F-456E-8738FD5342D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57086FA1-475B-0E1F-456E-8738FD5342D7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{57086FA1-475B-0E1F-456E-8738FD5342D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57086FA1-475B-0E1F-456E-8738FD5342D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57086FA1-475B-0E1F-456E-8738FD5342D7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A41DFCD1-C37E-43AC-B809-61722D16CB68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41DFCD1-C37E-43AC-B809-61722D16CB68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41DFCD1-C37E-43AC-B809-61722D16CB68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41DFCD1-C37E-43AC-B809-61722D16CB68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82115409-98A8-4143-99D0-8504771AAB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82115409-98A8-4143-99D0-8504771AAB5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82115409-98A8-4143-99D0-8504771AAB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82115409-98A8-4143-99D0-8504771AAB5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF4AAF2-A211-49E9-B06A-C374E3D965ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF4AAF2-A211-49E9-B06A-C374E3D965ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF4AAF2-A211-49E9-B06A-C374E3D965ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF4AAF2-A211-49E9-B06A-C374E3D965ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

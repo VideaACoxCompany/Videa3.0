@@ -1,0 +1,3169 @@
+﻿{
+  "ProtoSyntax": "proto3",
+  "Package": null,
+  "Import": [
+    "google/protobuf/timestamp.proto",
+    "google/protobuf/duration.proto"
+  ],
+  "ProtoService": [
+    {
+      "ServiceName": "CuratedRatingService",
+      "Rpc": [
+        {
+          "RpcName": "CuratedRatingDelete",
+          "Request": {
+            "MessageName": "CuratedRatingDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "CuratedRatingId",
+                "MessageType": null,
+                "FieldType": 3,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "CuratedRatingDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "RatingTypeDelete",
+          "Request": {
+            "MessageName": "RatingTypeDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatingTypeId",
+                "MessageType": null,
+                "FieldType": 2,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RatingTypeDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "CurationStatusDelete",
+          "Request": {
+            "MessageName": "CurationStatusDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "CurationStatusId",
+                "MessageType": null,
+                "FieldType": 2,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "CurationStatusDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "CuratedRatingAddUpdate",
+          "Request": {
+            "MessageName": "CuratedRatingAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "CuratedRating",
+                "MessageType": "CuratedRating",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "CuratedRatingAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "RatingTypeAddUpdate",
+          "Request": {
+            "MessageName": "RatingTypeAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatingType",
+                "MessageType": "RatingType",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RatingTypeAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "CurationStatusAddUpdate",
+          "Request": {
+            "MessageName": "CurationStatusAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "CurationStatus",
+                "MessageType": "CurationStatus",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "CurationStatusAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "GetConfirmedRatings",
+          "Request": {
+            "MessageName": "GetConfirmedRatingsRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryList",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "GetConfirmedRatingsResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "Rating",
+                "MessageType": "Rating",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "DtoName": "Rating"
+        },
+        {
+          "RpcName": "BulkStore",
+          "Request": {
+            "MessageName": "BulkStoreRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "CuratedRating",
+                "MessageType": "CuratedRating",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "RatingType",
+                "MessageType": "RatingType",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "CurationStatus",
+                "MessageType": "CurationStatus",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "Rating",
+                "MessageType": "Rating",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "BulkStoreResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        }
+      ]
+    }
+  ],
+  "ProtoMessage": [
+    {
+      "MessageName": "CuratedRating",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "CuratedRatingId",
+          "MessageType": null,
+          "FieldType": 3,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingVersion",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "IsDynamicRating",
+          "MessageType": null,
+          "FieldType": 4,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "CuratingRatingValue",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingTypeId",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "CurationStatusId",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "CreatedBy",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "ModifiedBy",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RowVersion",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "RatingType",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "RatingTypeId",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingTypeName",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingTypeDescription",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "CurationStatus",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "CurationStatusId",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "CurationStatusName",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "CurationStatusDescription",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "Rating",
+      "IsRequest": false,
+      "IsResponse": true,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "todo",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    }
+  ],
+  "Option": [
+    "csharp_namespace = \"Videa.CuratedRatingNS.Service.Proto.Types\";"
+  ],
+  "OwnedByProject": {
+    "ProjectIs": 0,
+    "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreConsoleApp\\NetCoreConsoleApp.csproj",
+    "SolutionFolder": null,
+    "ProjectFolder": "Code\\Videa.CuratedRating.Service",
+    "ProjectID": null,
+    "ProjectName": "Videa.CuratedRating.Service",
+    "ProjectShortName": "CuratedRating.Service",
+    "ProjectType": 0,
+    "FileName": "Videa.CuratedRating.Service.csproj",
+    "ProjectGuid": "e118c0b0-6936-a5ce-02c7-2badbff3b103",
+    "ProjectContent": [],
+    "Class": [],
+    "Interface": [],
+    "Path": null,
+    "DefaultNamespace": null,
+    "AssemblyName": "Videa.CuratedRating.Service",
+    "ProjectReference": [
+      {
+        "ProjectIs": 2,
+        "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreClassLibrary\\NetCoreClassLibrary.csproj",
+        "SolutionFolder": null,
+        "ProjectFolder": "Code\\Videa.CuratedRating.Data",
+        "ProjectID": null,
+        "ProjectName": "Videa.CuratedRating.Data",
+        "ProjectShortName": "CuratedRating.Data",
+        "ProjectType": 0,
+        "FileName": "Videa.CuratedRating.Data.csproj",
+        "ProjectGuid": "22f30deb-747b-a091-0804-cdb80d00d51f",
+        "ProjectContent": [
+          {
+            "Content": {
+              "InterfaceName": "ICuratedRatingDbProvider",
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": null
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Interface": {
+              "InterfaceName": "ICuratedRatingDbProvider",
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": null
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Class": null,
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "ICuratedRatingDbProvider.cs",
+              "Folder": "Providers",
+              "Path": "Providers\\ICuratedRatingDbProvider.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "CuratedRatingDbProvider",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "CuratedRatingDbProvider",
+                  "Parameter": [
+                    {
+                      "ParameterName": "connectionString",
+                      "Type": "string",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "return new SqlConnection(_connectionString);"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "_connectionString",
+                  "FieldType": "string",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": [
+                {
+                  "InterfaceName": "ICuratedRatingDbProvider",
+                  "Namespace": {
+                    "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+                  },
+                  "Method": [
+                    {
+                      "AccessModifier": 0,
+                      "SignatureOnly": true,
+                      "IsOverride": false,
+                      "IsAbstract": false,
+                      "IsStatic": false,
+                      "IsAsync": false,
+                      "IsExtensionMethod": false,
+                      "ReturnType": "IDbConnection",
+                      "ReferencesType": null,
+                      "MethodName": "GetConnection",
+                      "Parameter": [],
+                      "CodeSnippetFile": null,
+                      "CodeSnippet": null
+                    }
+                  ],
+                  "NamespaceRef": [
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data"
+                      }
+                    },
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data.SqlClient"
+                      }
+                    }
+                  ],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "CuratedRatingDbProvider",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "CuratedRatingDbProvider",
+                  "Parameter": [
+                    {
+                      "ParameterName": "connectionString",
+                      "Type": "string",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "return new SqlConnection(_connectionString);"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "_connectionString",
+                  "FieldType": "string",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": [
+                {
+                  "InterfaceName": "ICuratedRatingDbProvider",
+                  "Namespace": {
+                    "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+                  },
+                  "Method": [
+                    {
+                      "AccessModifier": 0,
+                      "SignatureOnly": true,
+                      "IsOverride": false,
+                      "IsAbstract": false,
+                      "IsStatic": false,
+                      "IsAsync": false,
+                      "IsExtensionMethod": false,
+                      "ReturnType": "IDbConnection",
+                      "ReferencesType": null,
+                      "MethodName": "GetConnection",
+                      "Parameter": [],
+                      "CodeSnippetFile": null,
+                      "CodeSnippet": null
+                    }
+                  ],
+                  "NamespaceRef": [
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data"
+                      }
+                    },
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data.SqlClient"
+                      }
+                    }
+                  ],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "CuratedRatingDbProvider.cs",
+              "Folder": "Providers",
+              "Path": "Providers\\CuratedRatingDbProvider.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": true,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 1,
+                  "ConstructorName": "BaseDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ICuratedRatingDbProvider",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+                }
+              ],
+              "Method": [],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 1,
+                  "FieldName": "DbProvider",
+                  "FieldType": "ICuratedRatingDbProvider",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": true,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 1,
+                  "ConstructorName": "BaseDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ICuratedRatingDbProvider",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+                }
+              ],
+              "Method": [],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 1,
+                  "FieldName": "DbProvider",
+                  "FieldType": "ICuratedRatingDbProvider",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "BaseDataService.cs",
+              "Folder": "DataServices\\Base",
+              "Path": "DataServices\\Base\\BaseDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "CuratedRating",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CuratedRatingId",
+                  "Type": "Int64",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingVersion",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "IsDynamicRating",
+                  "Type": "Boolean",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CuratingRatingValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingTypeId",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CurationStatusId",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CreatedBy",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "ModifiedBy",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RowVersion",
+                  "Type": "Byte[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "CuratedRating",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CuratedRatingId",
+                  "Type": "Int64",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingVersion",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "IsDynamicRating",
+                  "Type": "Boolean",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CuratingRatingValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingTypeId",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CurationStatusId",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CreatedBy",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "ModifiedBy",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RowVersion",
+                  "Type": "Byte[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "CuratedRating.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\CuratedRating.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RatingType",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingTypeId",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingTypeName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 64
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingTypeDescription",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RatingType",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingTypeId",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingTypeName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 64
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingTypeDescription",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "RatingType.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\RatingType.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "CurationStatus",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CurationStatusId",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CurationStatusName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 64
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CurationStatusDescription",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "CurationStatus",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CurationStatusId",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CurationStatusName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 64
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "CurationStatusDescription",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "CurationStatus.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\CurationStatus.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "Rating",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "todo",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 4
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "Rating",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "todo",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 4
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "Rating.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\Rating.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "InterfaceName": "ICuratedRatingDataService",
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CuratedRatingDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curatedratingid",
+                      "Type": "System.Int64",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedratingid, DbType.Int64);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingTypeDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingtypeid",
+                      "Type": "System.Int32",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtypeid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CurationStatusDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curationstatusid",
+                      "Type": "System.Int32",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatusid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CuratedRatingAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curatedrating",
+                      "Type": "CuratedRating",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedrating.CuratedRatingId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",curatedrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingHashKey\",curatedrating.RatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingVersion\",curatedrating.RatingVersion, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@IsDynamicRating\",curatedrating.IsDynamicRating, DbType.Boolean);\r\n\t\t\t\tsqlParams.Add(\"@CuratingRatingValue\",curatedrating.CuratingRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",curatedrating.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curatedrating.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CreatedBy\",curatedrating.CreatedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@ModifiedBy\",curatedrating.ModifiedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",curatedrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingTypeAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingtype",
+                      "Type": "RatingType",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtype.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeName\",ratingtype.RatingTypeName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeDescription\",ratingtype.RatingTypeDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CurationStatusAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curationstatus",
+                      "Type": "CurationStatus",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatus.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusName\",curationstatus.CurationStatusName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusDescription\",curationstatus.CurationStatusDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetConfirmedRatings",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SIRgApi.GetConfirmedRatings\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Interface": {
+              "InterfaceName": "ICuratedRatingDataService",
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CuratedRatingDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curatedratingid",
+                      "Type": "System.Int64",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedratingid, DbType.Int64);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingTypeDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingtypeid",
+                      "Type": "System.Int32",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtypeid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CurationStatusDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curationstatusid",
+                      "Type": "System.Int32",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatusid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CuratedRatingAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curatedrating",
+                      "Type": "CuratedRating",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedrating.CuratedRatingId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",curatedrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingHashKey\",curatedrating.RatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingVersion\",curatedrating.RatingVersion, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@IsDynamicRating\",curatedrating.IsDynamicRating, DbType.Boolean);\r\n\t\t\t\tsqlParams.Add(\"@CuratingRatingValue\",curatedrating.CuratingRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",curatedrating.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curatedrating.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CreatedBy\",curatedrating.CreatedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@ModifiedBy\",curatedrating.ModifiedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",curatedrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingTypeAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingtype",
+                      "Type": "RatingType",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtype.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeName\",ratingtype.RatingTypeName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeDescription\",ratingtype.RatingTypeDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CurationStatusAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curationstatus",
+                      "Type": "CurationStatus",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatus.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusName\",curationstatus.CurationStatusName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusDescription\",curationstatus.CurationStatusDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetConfirmedRatings",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SIRgApi.GetConfirmedRatings\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Class": null,
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "ICuratedRatingDataService.cs",
+              "Folder": "DataServices",
+              "Path": "DataServices\\ICuratedRatingDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Linq"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Dapper"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "CuratedRatingDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "CuratedRatingDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ICuratedRatingDbProvider",
+                      "PassToBaseClass": true
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "//empty constructor"
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CuratedRatingDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curatedratingid",
+                      "Type": "System.Int64",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedratingid, DbType.Int64);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingTypeDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingtypeid",
+                      "Type": "System.Int32",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtypeid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CurationStatusDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curationstatusid",
+                      "Type": "System.Int32",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatusid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CuratedRatingAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curatedrating",
+                      "Type": "CuratedRating",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedrating.CuratedRatingId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",curatedrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingHashKey\",curatedrating.RatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingVersion\",curatedrating.RatingVersion, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@IsDynamicRating\",curatedrating.IsDynamicRating, DbType.Boolean);\r\n\t\t\t\tsqlParams.Add(\"@CuratingRatingValue\",curatedrating.CuratingRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",curatedrating.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curatedrating.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CreatedBy\",curatedrating.CreatedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@ModifiedBy\",curatedrating.ModifiedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",curatedrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingTypeAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingtype",
+                      "Type": "RatingType",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtype.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeName\",ratingtype.RatingTypeName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeDescription\",ratingtype.RatingTypeDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CurationStatusAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curationstatus",
+                      "Type": "CurationStatus",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatus.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusName\",curationstatus.CurationStatusName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusDescription\",curationstatus.CurationStatusDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetConfirmedRatings",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SIRgApi.GetConfirmedRatings\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageNumber",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                },
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageSize",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": {
+                "NamespaceRef": [],
+                "AccessModifier": 0,
+                "IsAbstract": false,
+                "Namespace": null,
+                "IsStatic": false,
+                "ClassName": "BaseDataService",
+                "Constructor": [],
+                "Method": [],
+                "Property": [],
+                "Field": [],
+                "InheritsFrom": null,
+                "Implements": []
+              },
+              "Implements": [
+                {
+                  "InterfaceName": "ICuratedRatingDataService",
+                  "Namespace": null,
+                  "Method": [],
+                  "NamespaceRef": [],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Linq"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Dapper"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "CuratedRatingDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "CuratedRatingDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ICuratedRatingDbProvider",
+                      "PassToBaseClass": true
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "//empty constructor"
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CuratedRatingDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curatedratingid",
+                      "Type": "System.Int64",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedratingid, DbType.Int64);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingTypeDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingtypeid",
+                      "Type": "System.Int32",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtypeid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CurationStatusDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curationstatusid",
+                      "Type": "System.Int32",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatusid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CuratedRatingAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curatedrating",
+                      "Type": "CuratedRating",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedrating.CuratedRatingId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",curatedrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingHashKey\",curatedrating.RatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingVersion\",curatedrating.RatingVersion, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@IsDynamicRating\",curatedrating.IsDynamicRating, DbType.Boolean);\r\n\t\t\t\tsqlParams.Add(\"@CuratingRatingValue\",curatedrating.CuratingRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",curatedrating.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curatedrating.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CreatedBy\",curatedrating.CreatedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@ModifiedBy\",curatedrating.ModifiedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",curatedrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingTypeAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingtype",
+                      "Type": "RatingType",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtype.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeName\",ratingtype.RatingTypeName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeDescription\",ratingtype.RatingTypeDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "CurationStatusAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "curationstatus",
+                      "Type": "CurationStatus",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatus.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusName\",curationstatus.CurationStatusName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusDescription\",curationstatus.CurationStatusDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetConfirmedRatings",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SIRgApi.GetConfirmedRatings\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageNumber",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                },
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageSize",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": {
+                "NamespaceRef": [],
+                "AccessModifier": 0,
+                "IsAbstract": false,
+                "Namespace": null,
+                "IsStatic": false,
+                "ClassName": "BaseDataService",
+                "Constructor": [],
+                "Method": [],
+                "Property": [],
+                "Field": [],
+                "InheritsFrom": null,
+                "Implements": []
+              },
+              "Implements": [
+                {
+                  "InterfaceName": "ICuratedRatingDataService",
+                  "Namespace": null,
+                  "Method": [],
+                  "NamespaceRef": [],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "CuratedRatingDataService.cs",
+              "Folder": "DataServices",
+              "Path": "DataServices\\CuratedRatingDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          }
+        ],
+        "Class": [
+          {
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              }
+            ],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "CuratedRatingDbProvider",
+            "Constructor": [
+              {
+                "AccessModifier": 0,
+                "ConstructorName": "CuratedRatingDbProvider",
+                "Parameter": [
+                  {
+                    "ParameterName": "connectionString",
+                    "Type": "string",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+              }
+            ],
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "IDbConnection",
+                "ReferencesType": null,
+                "MethodName": "GetConnection",
+                "Parameter": [],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "return new SqlConnection(_connectionString);"
+              }
+            ],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 2,
+                "FieldName": "_connectionString",
+                "FieldType": "string",
+                "ReferencesType": null,
+                "IsReadonly": true,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": null,
+            "Implements": [
+              {
+                "InterfaceName": "ICuratedRatingDbProvider",
+                "Namespace": {
+                  "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+                },
+                "Method": [
+                  {
+                    "AccessModifier": 0,
+                    "SignatureOnly": true,
+                    "IsOverride": false,
+                    "IsAbstract": false,
+                    "IsStatic": false,
+                    "IsAsync": false,
+                    "IsExtensionMethod": false,
+                    "ReturnType": "IDbConnection",
+                    "ReferencesType": null,
+                    "MethodName": "GetConnection",
+                    "Parameter": [],
+                    "CodeSnippetFile": null,
+                    "CodeSnippet": null
+                  }
+                ],
+                "NamespaceRef": [
+                  {
+                    "ReferenceTo": {
+                      "NamespaceName": "System.Data"
+                    }
+                  },
+                  {
+                    "ReferenceTo": {
+                      "NamespaceName": "System.Data.SqlClient"
+                    }
+                  }
+                ],
+                "InheritsFrom": null,
+                "IsGeneric": false
+              }
+            ]
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": true,
+            "Namespace": {
+              "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "BaseDataService",
+            "Constructor": [
+              {
+                "AccessModifier": 1,
+                "ConstructorName": "BaseDataService",
+                "Parameter": [
+                  {
+                    "ParameterName": "dbProvider",
+                    "Type": "ICuratedRatingDbProvider",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+              }
+            ],
+            "Method": [],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 1,
+                "FieldName": "DbProvider",
+                "FieldType": "ICuratedRatingDbProvider",
+                "ReferencesType": null,
+                "IsReadonly": true,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "CuratedRating",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "CuratedRatingId",
+                "Type": "Int64",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingVersion",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "IsDynamicRating",
+                "Type": "Boolean",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "CuratingRatingValue",
+                "Type": "Decimal",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingTypeId",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "CurationStatusId",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "CreatedBy",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "ModifiedBy",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RowVersion",
+                "Type": "Byte[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "RatingType",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingTypeId",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingTypeName",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 64
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingTypeDescription",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "CurationStatus",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "CurationStatusId",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "CurationStatusName",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 64
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "CurationStatusDescription",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "Rating",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "todo",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 4
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Linq"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Collections.Generic"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Threading.Tasks"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Dapper"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+                }
+              }
+            ],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "CuratedRatingDataService",
+            "Constructor": [
+              {
+                "AccessModifier": 0,
+                "ConstructorName": "CuratedRatingDataService",
+                "Parameter": [
+                  {
+                    "ParameterName": "dbProvider",
+                    "Type": "ICuratedRatingDbProvider",
+                    "PassToBaseClass": true
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "//empty constructor"
+              }
+            ],
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "CuratedRatingDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "curatedratingid",
+                    "Type": "System.Int64",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedratingid, DbType.Int64);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingTypeDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingtypeid",
+                    "Type": "System.Int32",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtypeid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "CurationStatusDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "curationstatusid",
+                    "Type": "System.Int32",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatusid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "CuratedRatingAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "curatedrating",
+                    "Type": "CuratedRating",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedrating.CuratedRatingId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",curatedrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingHashKey\",curatedrating.RatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingVersion\",curatedrating.RatingVersion, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@IsDynamicRating\",curatedrating.IsDynamicRating, DbType.Boolean);\r\n\t\t\t\tsqlParams.Add(\"@CuratingRatingValue\",curatedrating.CuratingRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",curatedrating.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curatedrating.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CreatedBy\",curatedrating.CreatedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@ModifiedBy\",curatedrating.ModifiedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",curatedrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingTypeAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingtype",
+                    "Type": "RatingType",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtype.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeName\",ratingtype.RatingTypeName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeDescription\",ratingtype.RatingTypeDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "CurationStatusAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "curationstatus",
+                    "Type": "CurationStatus",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatus.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusName\",curationstatus.CurationStatusName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusDescription\",curationstatus.CurationStatusDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<Rating>>",
+                "ReferencesType": null,
+                "MethodName": "GetConfirmedRatings",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorylist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SIRgApi.GetConfirmedRatings\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              }
+            ],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 2,
+                "FieldName": "DefaultPageNumber",
+                "FieldType": "int",
+                "ReferencesType": null,
+                "IsReadonly": false,
+                "IsConst": false,
+                "IsStatic": false
+              },
+              {
+                "AccessModifier": 2,
+                "FieldName": "DefaultPageSize",
+                "FieldType": "int",
+                "ReferencesType": null,
+                "IsReadonly": false,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": null,
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [],
+              "Method": [],
+              "Property": [],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Implements": [
+              {
+                "InterfaceName": "ICuratedRatingDataService",
+                "Namespace": null,
+                "Method": [],
+                "NamespaceRef": [],
+                "InheritsFrom": null,
+                "IsGeneric": false
+              }
+            ]
+          }
+        ],
+        "Interface": [
+          {
+            "InterfaceName": "ICuratedRatingDbProvider",
+            "Namespace": {
+              "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+            },
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "IDbConnection",
+                "ReferencesType": null,
+                "MethodName": "GetConnection",
+                "Parameter": [],
+                "CodeSnippetFile": null,
+                "CodeSnippet": null
+              }
+            ],
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              }
+            ],
+            "InheritsFrom": null,
+            "IsGeneric": false
+          },
+          {
+            "InterfaceName": "ICuratedRatingDataService",
+            "Namespace": {
+              "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+            },
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "CuratedRatingDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "curatedratingid",
+                    "Type": "System.Int64",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedratingid, DbType.Int64);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingTypeDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingtypeid",
+                    "Type": "System.Int32",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtypeid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "CurationStatusDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "curationstatusid",
+                    "Type": "System.Int32",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatusid, DbType.Int32);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "CuratedRatingAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "curatedrating",
+                    "Type": "CuratedRating",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CuratedRatingId\",curatedrating.CuratedRatingId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",curatedrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingHashKey\",curatedrating.RatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingVersion\",curatedrating.RatingVersion, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@IsDynamicRating\",curatedrating.IsDynamicRating, DbType.Boolean);\r\n\t\t\t\tsqlParams.Add(\"@CuratingRatingValue\",curatedrating.CuratingRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",curatedrating.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curatedrating.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CreatedBy\",curatedrating.CreatedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@ModifiedBy\",curatedrating.ModifiedBy, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",curatedrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CuratedRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingTypeAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingtype",
+                    "Type": "RatingType",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeId\",ratingtype.RatingTypeId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeName\",ratingtype.RatingTypeName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingTypeDescription\",ratingtype.RatingTypeDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.RatingTypeAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "CurationStatusAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "curationstatus",
+                    "Type": "CurationStatus",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusId\",curationstatus.CurationStatusId, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusName\",curationstatus.CurationStatusName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@CurationStatusDescription\",curationstatus.CurationStatusDescription, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SIRgApi.CurationStatusAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<Rating>>",
+                "ReferencesType": null,
+                "MethodName": "GetConfirmedRatings",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorylist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SIRgApi.GetConfirmedRatings\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              }
+            ],
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Collections.Generic"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Threading.Tasks"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Videa.CuratedRatingNS.Data.DataServices"
+                }
+              }
+            ],
+            "InheritsFrom": null,
+            "IsGeneric": false
+          }
+        ],
+        "Path": null,
+        "DefaultNamespace": null,
+        "AssemblyName": "Videa.CuratedRating.Data",
+        "ProjectReference": [],
+        "NuGetReference": [
+          {
+            "NuGetName": "Dapper",
+            "Version": "1.50.2"
+          }
+        ],
+        "PostBuildEventStep": []
+      }
+    ],
+    "NuGetReference": [],
+    "PostBuildEventStep": []
+  }
+}
