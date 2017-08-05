@@ -1,6 +1,9 @@
-﻿ CREATE PROCEDURE SIRgApi.GetConfirmedRatings
+﻿ CREATE PROCEDURE [SIRgApi].[GetConfirmedRatings]
         (
             @SellableInventoryList ttSellableInventory READONLY
         )
         AS
-            SELECT 1 as 'todo'
+            SELECT SellableInventoryHashKey,
+			RatingHashKey
+			FROM [SIRgApi].[CuratedRating] 
+			where SellableInventoryHashKey in (select SellableInventoryHashKey from @SellableInventoryList)

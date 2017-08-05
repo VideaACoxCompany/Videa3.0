@@ -1,6 +1,16 @@
-﻿CREATE PROCEDURE SIRApi.GetConfirmedRates 
+﻿CREATE PROCEDURE SIRApi.GetConfirmedRates
 (
-@SellableInventoryList ttSellableInventory READONLY
+@SellableInventoryList [ttSellableInventory] READONLY
 )
 AS
-    SELECT 1 as 'todo'
+SELECT SellableInventoryHashKey,
+       RateHashKey
+FROM   [SIR].[CuratedRate]
+WHERE  [SellableInventoryHashKey] IN (SELECT SellableInventoryHashKey
+                                      FROM   @SellableInventoryList)
+       AND CurationStatusId = 3 -- 'confirmed'
+	   AND RateVersion = 1
+
+    
+GO
+
