@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Videa.TrafficStatistic.Db", "Code\Videa.TrafficStatistic.Db\Videa.TrafficStatistic.Db.sqlproj", "{A7DF91B2-B633-7119-BA66-B82CC674A460}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videa.TrafficStatistic.Data", "Code\Videa.TrafficStatistic.Data\Videa.TrafficStatistic.Data.csproj", "{F5816DCD-6B21-434C-8DC7-40E21BA1F891}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videa.TrafficStatistic.Service", "Code\Videa.TrafficStatistic.Service\Videa.TrafficStatistic.Service.csproj", "{D2FDC25A-B299-4BA1-AC04-B86DDA2D4103}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videa.TrafficStatistic.Service.TestClient", "Code\Videa.TrafficStatistic.Service.TestClient\Videa.TrafficStatistic.Service.TestClient.csproj", "{7898C0DD-B04D-43AD-B6E2-185F8562E2CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7DF91B2-B633-7119-BA66-B82CC674A460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DF91B2-B633-7119-BA66-B82CC674A460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DF91B2-B633-7119-BA66-B82CC674A460}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A7DF91B2-B633-7119-BA66-B82CC674A460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DF91B2-B633-7119-BA66-B82CC674A460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7DF91B2-B633-7119-BA66-B82CC674A460}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F5816DCD-6B21-434C-8DC7-40E21BA1F891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5816DCD-6B21-434C-8DC7-40E21BA1F891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5816DCD-6B21-434C-8DC7-40E21BA1F891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5816DCD-6B21-434C-8DC7-40E21BA1F891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2FDC25A-B299-4BA1-AC04-B86DDA2D4103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2FDC25A-B299-4BA1-AC04-B86DDA2D4103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2FDC25A-B299-4BA1-AC04-B86DDA2D4103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2FDC25A-B299-4BA1-AC04-B86DDA2D4103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7898C0DD-B04D-43AD-B6E2-185F8562E2CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7898C0DD-B04D-43AD-B6E2-185F8562E2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7898C0DD-B04D-43AD-B6E2-185F8562E2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7898C0DD-B04D-43AD-B6E2-185F8562E2CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

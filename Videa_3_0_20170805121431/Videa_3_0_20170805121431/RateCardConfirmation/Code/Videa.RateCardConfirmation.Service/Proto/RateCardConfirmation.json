@@ -1,0 +1,58 @@
+﻿{
+  "ProtoSyntax": "proto3",
+  "Package": null,
+  "Import": [
+    "google/protobuf/timestamp.proto",
+    "google/protobuf/duration.proto"
+  ],
+  "ProtoService": [
+    {
+      "ServiceName": "RateCardConfirmationService",
+      "Rpc": [
+        {
+          "RpcName": "ConfirmRateCard",
+          "Request": {
+            "MessageName": "ConfirmRateCardRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "Response": {
+            "MessageName": "ConfirmRateCardResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        }
+      ]
+    }
+  ],
+  "ProtoMessage": [],
+  "Option": [
+    "csharp_namespace = \"Videa.RateCardConfirmation.Service.Proto.Types\";"
+  ],
+  "OwnedByProject": {
+    "ProjectIs": 100,
+    "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreConsoleApp\\NetCoreConsoleApp.csproj",
+    "SolutionFolder": null,
+    "ProjectFolder": "Code\\Videa.RateCardConfirmation.Service",
+    "ProjectID": null,
+    "ProjectName": "Videa.RateCardConfirmation.Service",
+    "ProjectShortName": "RateCardConfirmation.Service",
+    "ProjectType": 0,
+    "FileName": "Videa.RateCardConfirmation.Service.csproj",
+    "ProjectGuid": "ad6c7e24-2062-0620-8921-030bbc74a6da",
+    "ProjectContent": [],
+    "Class": [],
+    "Interface": [],
+    "Path": null,
+    "DefaultNamespace": null,
+    "AssemblyName": "Videa.RateCardConfirmation.Service",
+    "ProjectReference": [],
+    "NuGetReference": [],
+    "PostBuildEventStep": []
+  }
+}

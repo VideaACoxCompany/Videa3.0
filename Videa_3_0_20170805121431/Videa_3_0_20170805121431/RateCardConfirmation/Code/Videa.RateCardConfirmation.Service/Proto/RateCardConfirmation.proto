@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+option csharp_namespace = "Videa.RateCardConfirmation.Service.Proto.Types";
+
+service RateCardConfirmationService {
+	rpc ConfirmRateCard (ConfirmRateCardRequest) returns (ConfirmRateCardResponse) {}
+}
+message ConfirmRateCardRequest {
+}
+message ConfirmRateCardResponse {
+}
+

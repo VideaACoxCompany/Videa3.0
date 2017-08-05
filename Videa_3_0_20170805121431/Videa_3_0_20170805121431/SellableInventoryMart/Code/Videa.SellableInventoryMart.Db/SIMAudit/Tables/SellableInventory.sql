@@ -1,0 +1,26 @@
+﻿CREATE TABLE [SIMAudit].[SellableInventory] (
+    [SellableInventoryHashKey]       CHAR (32)     NOT NULL UNIQUE NONCLUSTERED ([SellableInventoryHashKey] ASC),
+    [SellableInventorySqn]           INT           IDENTITY (1000, 1) NOT NULL,
+    [StationHashKey]                 CHAR (32)     NOT NULL,
+    [StationGroupHashKey]            CHAR (32)     NOT NULL,
+    [RateCardHashKey]                CHAR (32)     NOT NULL,
+    [RateCardDaypartHashKey]         CHAR (32)     NOT NULL,
+    [RateCardTypeHashKey]            CHAR (32)     NOT NULL,
+    [SellingTitleHashKey]            CHAR (32)     NOT NULL,
+    [SellingTitleDaysOfWeekHashKey]  CHAR (32)     NOT NULL,
+    [SellingTitleTimeRangeHashKey]   CHAR (32)     NOT NULL,
+    [SellableInventoryPeriodHashKey] CHAR (32)     NOT NULL,
+    [CreatedDateUtc]                 DATETIME2 (7) NOT NULL,
+    [ModifiedDateUtc]                DATETIME2 (7) NULL,
+    CONSTRAINT [PK_SIMAudit_SellableInventory_SellableInventoryHashKey] PRIMARY KEY CLUSTERED ([SellableInventoryHashKey] ASC),
+    FOREIGN KEY ([RateCardDaypartHashKey]) REFERENCES [SIM].[RateCardDaypart] ([RateCardDaypartHashKey]),
+    FOREIGN KEY ([RateCardHashKey]) REFERENCES [SIM].[RateCard] ([RateCardHashKey]),
+    FOREIGN KEY ([RateCardTypeHashKey]) REFERENCES [SIM].[RateCardType] ([RateCardTypeHashKey]),
+    FOREIGN KEY ([SellableInventoryPeriodHashKey]) REFERENCES [SIM].[SellableInventoryPeriod] ([SellableInventoryPeriodHashKey]),
+    FOREIGN KEY ([SellingTitleDaysOfWeekHashKey]) REFERENCES [SIM].[SellingTitleDaysOfWeek] ([SellingTitleDaysOfWeekHashKey]),
+    FOREIGN KEY ([SellingTitleHashKey]) REFERENCES [SIM].[SellingTitle] ([SellingTitleHashKey]),
+    FOREIGN KEY ([SellingTitleTimeRangeHashKey]) REFERENCES [SIM].[SellingTitleTimeRange] ([SellingTitleTimeRangeHashKey]),
+    FOREIGN KEY ([StationGroupHashKey]) REFERENCES [SIM].[StationGroup] ([StationGroupHashKey]),
+    FOREIGN KEY ([StationHashKey]) REFERENCES [SIM].[Station] ([StationHashKey])
+);
+

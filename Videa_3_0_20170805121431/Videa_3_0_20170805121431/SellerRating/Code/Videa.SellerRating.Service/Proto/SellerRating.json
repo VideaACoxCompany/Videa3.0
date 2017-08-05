@@ -1,0 +1,3372 @@
+﻿{
+  "ProtoSyntax": "proto3",
+  "Package": null,
+  "Import": [
+    "google/protobuf/timestamp.proto",
+    "google/protobuf/duration.proto"
+  ],
+  "ProtoService": [
+    {
+      "ServiceName": "SellerRatingService",
+      "Rpc": [
+        {
+          "RpcName": "RatingDemoDelete",
+          "Request": {
+            "MessageName": "RatingDemoDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatingDemoHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RatingDemoDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "RatingPeriodDelete",
+          "Request": {
+            "MessageName": "RatingPeriodDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatingPeriodHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RatingPeriodDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "SellableInventoryRatingDelete",
+          "Request": {
+            "MessageName": "SellableInventoryRatingDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryRatingHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "SellableInventoryRatingDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "RatingDemoAddUpdate",
+          "Request": {
+            "MessageName": "RatingDemoAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatingDemo",
+                "MessageType": "RatingDemo",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RatingDemoAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "RatingPeriodAddUpdate",
+          "Request": {
+            "MessageName": "RatingPeriodAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatingPeriod",
+                "MessageType": "RatingPeriod",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RatingPeriodAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "SellableInventoryRatingAddUpdate",
+          "Request": {
+            "MessageName": "SellableInventoryRatingAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryRating",
+                "MessageType": "SellableInventoryRating",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "SellableInventoryRatingAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "GetSellerRatingsByInventoryKeys",
+          "Request": {
+            "MessageName": "GetSellerRatingsByInventoryKeysRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryList",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "GetSellerRatingsByInventoryKeysResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "Rating",
+                "MessageType": "Rating",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "DtoName": "Rating"
+        },
+        {
+          "RpcName": "GetSellerRatingsByRatingKeys",
+          "Request": {
+            "MessageName": "GetSellerRatingsByRatingKeysRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryRatingList",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "GetSellerRatingsByRatingKeysResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "Rating",
+                "MessageType": "Rating",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "DtoName": "Rating"
+        },
+        {
+          "RpcName": "BulkStore",
+          "Request": {
+            "MessageName": "BulkStoreRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatingDemo",
+                "MessageType": "RatingDemo",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "RatingPeriod",
+                "MessageType": "RatingPeriod",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "SellableInventoryRating",
+                "MessageType": "SellableInventoryRating",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "Rating",
+                "MessageType": "Rating",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "BulkStoreResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        }
+      ]
+    }
+  ],
+  "ProtoMessage": [
+    {
+      "MessageName": "RatingDemo",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "RatingDemoHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingDemoSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingDemoName",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "RatingPeriod",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "RatingPeriodHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingPeriodSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingPeriodName",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingPeriodStartDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingPeriodEndDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "SellableInventoryRating",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "SellableInventoryRatingHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryRatingSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingDemoHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingPeriodHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryRatingValue",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RowVersion",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "Rating",
+      "IsRequest": false,
+      "IsResponse": true,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "SellableInventoryRatingValue",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryRatingHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatingDemoHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    }
+  ],
+  "Option": [
+    "csharp_namespace = \"Videa.SellerRatingNS.Service.Proto.Types\";"
+  ],
+  "OwnedByProject": {
+    "ProjectIs": 0,
+    "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreConsoleApp\\NetCoreConsoleApp.csproj",
+    "SolutionFolder": null,
+    "ProjectFolder": "Code\\Videa.SellerRating.Service",
+    "ProjectID": null,
+    "ProjectName": "Videa.SellerRating.Service",
+    "ProjectShortName": "SellerRating.Service",
+    "ProjectType": 0,
+    "FileName": "Videa.SellerRating.Service.csproj",
+    "ProjectGuid": "4030ec97-48db-ed05-2454-14c2bb0c263e",
+    "ProjectContent": [],
+    "Class": [],
+    "Interface": [],
+    "Path": null,
+    "DefaultNamespace": null,
+    "AssemblyName": "Videa.SellerRating.Service",
+    "ProjectReference": [
+      {
+        "ProjectIs": 2,
+        "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreClassLibrary\\NetCoreClassLibrary.csproj",
+        "SolutionFolder": null,
+        "ProjectFolder": "Code\\Videa.SellerRating.Data",
+        "ProjectID": null,
+        "ProjectName": "Videa.SellerRating.Data",
+        "ProjectShortName": "SellerRating.Data",
+        "ProjectType": 0,
+        "FileName": "Videa.SellerRating.Data.csproj",
+        "ProjectGuid": "aa202d8d-9c06-9b14-e19e-9426e7941a3e",
+        "ProjectContent": [
+          {
+            "Content": {
+              "InterfaceName": "ISellerRatingDbProvider",
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": null
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Interface": {
+              "InterfaceName": "ISellerRatingDbProvider",
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": null
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Class": null,
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "ISellerRatingDbProvider.cs",
+              "Folder": "Providers",
+              "Path": "Providers\\ISellerRatingDbProvider.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellerRatingDbProvider",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "SellerRatingDbProvider",
+                  "Parameter": [
+                    {
+                      "ParameterName": "connectionString",
+                      "Type": "string",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "return new SqlConnection(_connectionString);"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "_connectionString",
+                  "FieldType": "string",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": [
+                {
+                  "InterfaceName": "ISellerRatingDbProvider",
+                  "Namespace": {
+                    "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+                  },
+                  "Method": [
+                    {
+                      "AccessModifier": 0,
+                      "SignatureOnly": true,
+                      "IsOverride": false,
+                      "IsAbstract": false,
+                      "IsStatic": false,
+                      "IsAsync": false,
+                      "IsExtensionMethod": false,
+                      "ReturnType": "IDbConnection",
+                      "ReferencesType": null,
+                      "MethodName": "GetConnection",
+                      "Parameter": [],
+                      "CodeSnippetFile": null,
+                      "CodeSnippet": null
+                    }
+                  ],
+                  "NamespaceRef": [
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data"
+                      }
+                    },
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data.SqlClient"
+                      }
+                    }
+                  ],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellerRatingDbProvider",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "SellerRatingDbProvider",
+                  "Parameter": [
+                    {
+                      "ParameterName": "connectionString",
+                      "Type": "string",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "return new SqlConnection(_connectionString);"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "_connectionString",
+                  "FieldType": "string",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": [
+                {
+                  "InterfaceName": "ISellerRatingDbProvider",
+                  "Namespace": {
+                    "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+                  },
+                  "Method": [
+                    {
+                      "AccessModifier": 0,
+                      "SignatureOnly": true,
+                      "IsOverride": false,
+                      "IsAbstract": false,
+                      "IsStatic": false,
+                      "IsAsync": false,
+                      "IsExtensionMethod": false,
+                      "ReturnType": "IDbConnection",
+                      "ReferencesType": null,
+                      "MethodName": "GetConnection",
+                      "Parameter": [],
+                      "CodeSnippetFile": null,
+                      "CodeSnippet": null
+                    }
+                  ],
+                  "NamespaceRef": [
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data"
+                      }
+                    },
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data.SqlClient"
+                      }
+                    }
+                  ],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "SellerRatingDbProvider.cs",
+              "Folder": "Providers",
+              "Path": "Providers\\SellerRatingDbProvider.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": true,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 1,
+                  "ConstructorName": "BaseDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ISellerRatingDbProvider",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+                }
+              ],
+              "Method": [],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 1,
+                  "FieldName": "DbProvider",
+                  "FieldType": "ISellerRatingDbProvider",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": true,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 1,
+                  "ConstructorName": "BaseDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ISellerRatingDbProvider",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+                }
+              ],
+              "Method": [],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 1,
+                  "FieldName": "DbProvider",
+                  "FieldType": "ISellerRatingDbProvider",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "BaseDataService.cs",
+              "Folder": "DataServices\\Base",
+              "Path": "DataServices\\Base\\BaseDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RatingDemo",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingDemoHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingDemoSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingDemoName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RatingDemo",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingDemoHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingDemoSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingDemoName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "RatingDemo.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\RatingDemo.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RatingPeriod",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodStartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodEndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RatingPeriod",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodStartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodEndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "RatingPeriod.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\RatingPeriod.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellableInventoryRating",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRatingHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRatingSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingDemoHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRatingValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RowVersion",
+                  "Type": "Byte[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellableInventoryRating",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRatingHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRatingSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingDemoHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingPeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRatingValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RowVersion",
+                  "Type": "Byte[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "SellableInventoryRating.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\SellableInventoryRating.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "Rating",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRatingValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 9
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRatingHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingDemoHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "Rating",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRatingValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 9
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRatingHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatingDemoHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "Rating.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\Rating.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "InterfaceName": "ISellerRatingDataService",
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingDemoDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingdemohashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemohashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingPeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRatingDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratinghashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryratinghashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingDemoAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingdemo",
+                      "Type": "RatingDemo",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemo.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoSqn\",ratingdemo.RatingDemoSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoName\",ratingdemo.RatingDemoName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingPeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingperiod",
+                      "Type": "RatingPeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiod.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodSqn\",ratingperiod.RatingPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodName\",ratingperiod.RatingPeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodStartDate\",ratingperiod.RatingPeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodEndDate\",ratingperiod.RatingPeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRatingAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryrating",
+                      "Type": "SellableInventoryRating",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryrating.SellableInventoryRatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingSqn\",sellableinventoryrating.SellableInventoryRatingSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",sellableinventoryrating.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",sellableinventoryrating.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingValue\",sellableinventoryrating.SellableInventoryRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatingsByInventoryKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatingsByRatingKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratinglist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingList\",sellableinventoryratinglist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByRatingKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Interface": {
+              "InterfaceName": "ISellerRatingDataService",
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingDemoDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingdemohashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemohashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingPeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRatingDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratinghashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryratinghashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingDemoAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingdemo",
+                      "Type": "RatingDemo",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemo.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoSqn\",ratingdemo.RatingDemoSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoName\",ratingdemo.RatingDemoName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingPeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingperiod",
+                      "Type": "RatingPeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiod.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodSqn\",ratingperiod.RatingPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodName\",ratingperiod.RatingPeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodStartDate\",ratingperiod.RatingPeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodEndDate\",ratingperiod.RatingPeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRatingAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryrating",
+                      "Type": "SellableInventoryRating",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryrating.SellableInventoryRatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingSqn\",sellableinventoryrating.SellableInventoryRatingSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",sellableinventoryrating.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",sellableinventoryrating.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingValue\",sellableinventoryrating.SellableInventoryRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatingsByInventoryKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatingsByRatingKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratinglist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingList\",sellableinventoryratinglist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByRatingKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Class": null,
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "ISellerRatingDataService.cs",
+              "Folder": "DataServices",
+              "Path": "DataServices\\ISellerRatingDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Linq"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Dapper"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellerRatingDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "SellerRatingDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ISellerRatingDbProvider",
+                      "PassToBaseClass": true
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "//empty constructor"
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingDemoDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingdemohashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemohashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingPeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRatingDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratinghashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryratinghashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingDemoAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingdemo",
+                      "Type": "RatingDemo",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemo.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoSqn\",ratingdemo.RatingDemoSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoName\",ratingdemo.RatingDemoName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingPeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingperiod",
+                      "Type": "RatingPeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiod.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodSqn\",ratingperiod.RatingPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodName\",ratingperiod.RatingPeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodStartDate\",ratingperiod.RatingPeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodEndDate\",ratingperiod.RatingPeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRatingAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryrating",
+                      "Type": "SellableInventoryRating",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryrating.SellableInventoryRatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingSqn\",sellableinventoryrating.SellableInventoryRatingSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",sellableinventoryrating.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",sellableinventoryrating.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingValue\",sellableinventoryrating.SellableInventoryRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatingsByInventoryKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatingsByRatingKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratinglist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingList\",sellableinventoryratinglist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByRatingKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageNumber",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                },
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageSize",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": {
+                "NamespaceRef": [],
+                "AccessModifier": 0,
+                "IsAbstract": false,
+                "Namespace": null,
+                "IsStatic": false,
+                "ClassName": "BaseDataService",
+                "Constructor": [],
+                "Method": [],
+                "Property": [],
+                "Field": [],
+                "InheritsFrom": null,
+                "Implements": []
+              },
+              "Implements": [
+                {
+                  "InterfaceName": "ISellerRatingDataService",
+                  "Namespace": null,
+                  "Method": [],
+                  "NamespaceRef": [],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Linq"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Dapper"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellerRatingDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "SellerRatingDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ISellerRatingDbProvider",
+                      "PassToBaseClass": true
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "//empty constructor"
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingDemoDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingdemohashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemohashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingPeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRatingDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratinghashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryratinghashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingDemoAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingdemo",
+                      "Type": "RatingDemo",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemo.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoSqn\",ratingdemo.RatingDemoSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoName\",ratingdemo.RatingDemoName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatingPeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratingperiod",
+                      "Type": "RatingPeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiod.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodSqn\",ratingperiod.RatingPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodName\",ratingperiod.RatingPeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodStartDate\",ratingperiod.RatingPeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodEndDate\",ratingperiod.RatingPeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRatingAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryrating",
+                      "Type": "SellableInventoryRating",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryrating.SellableInventoryRatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingSqn\",sellableinventoryrating.SellableInventoryRatingSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",sellableinventoryrating.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",sellableinventoryrating.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingValue\",sellableinventoryrating.SellableInventoryRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatingsByInventoryKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rating>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatingsByRatingKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratinglist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingList\",sellableinventoryratinglist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByRatingKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageNumber",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                },
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageSize",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": {
+                "NamespaceRef": [],
+                "AccessModifier": 0,
+                "IsAbstract": false,
+                "Namespace": null,
+                "IsStatic": false,
+                "ClassName": "BaseDataService",
+                "Constructor": [],
+                "Method": [],
+                "Property": [],
+                "Field": [],
+                "InheritsFrom": null,
+                "Implements": []
+              },
+              "Implements": [
+                {
+                  "InterfaceName": "ISellerRatingDataService",
+                  "Namespace": null,
+                  "Method": [],
+                  "NamespaceRef": [],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "SellerRatingDataService.cs",
+              "Folder": "DataServices",
+              "Path": "DataServices\\SellerRatingDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          }
+        ],
+        "Class": [
+          {
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              }
+            ],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "SellerRatingDbProvider",
+            "Constructor": [
+              {
+                "AccessModifier": 0,
+                "ConstructorName": "SellerRatingDbProvider",
+                "Parameter": [
+                  {
+                    "ParameterName": "connectionString",
+                    "Type": "string",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+              }
+            ],
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "IDbConnection",
+                "ReferencesType": null,
+                "MethodName": "GetConnection",
+                "Parameter": [],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "return new SqlConnection(_connectionString);"
+              }
+            ],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 2,
+                "FieldName": "_connectionString",
+                "FieldType": "string",
+                "ReferencesType": null,
+                "IsReadonly": true,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": null,
+            "Implements": [
+              {
+                "InterfaceName": "ISellerRatingDbProvider",
+                "Namespace": {
+                  "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+                },
+                "Method": [
+                  {
+                    "AccessModifier": 0,
+                    "SignatureOnly": true,
+                    "IsOverride": false,
+                    "IsAbstract": false,
+                    "IsStatic": false,
+                    "IsAsync": false,
+                    "IsExtensionMethod": false,
+                    "ReturnType": "IDbConnection",
+                    "ReferencesType": null,
+                    "MethodName": "GetConnection",
+                    "Parameter": [],
+                    "CodeSnippetFile": null,
+                    "CodeSnippet": null
+                  }
+                ],
+                "NamespaceRef": [
+                  {
+                    "ReferenceTo": {
+                      "NamespaceName": "System.Data"
+                    }
+                  },
+                  {
+                    "ReferenceTo": {
+                      "NamespaceName": "System.Data.SqlClient"
+                    }
+                  }
+                ],
+                "InheritsFrom": null,
+                "IsGeneric": false
+              }
+            ]
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": true,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "BaseDataService",
+            "Constructor": [
+              {
+                "AccessModifier": 1,
+                "ConstructorName": "BaseDataService",
+                "Parameter": [
+                  {
+                    "ParameterName": "dbProvider",
+                    "Type": "ISellerRatingDbProvider",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+              }
+            ],
+            "Method": [],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 1,
+                "FieldName": "DbProvider",
+                "FieldType": "ISellerRatingDbProvider",
+                "ReferencesType": null,
+                "IsReadonly": true,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "RatingDemo",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingDemoHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingDemoSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingDemoName",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "RatingPeriod",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingPeriodHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingPeriodSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingPeriodName",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingPeriodStartDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingPeriodEndDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "SellableInventoryRating",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryRatingHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryRatingSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingDemoHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingPeriodHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryRatingValue",
+                "Type": "Decimal",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RowVersion",
+                "Type": "Byte[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "Rating",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryRatingValue",
+                "Type": "Decimal",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 9
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryRatingHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatingDemoHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Linq"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Collections.Generic"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Threading.Tasks"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Dapper"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+                }
+              }
+            ],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "SellerRatingDataService",
+            "Constructor": [
+              {
+                "AccessModifier": 0,
+                "ConstructorName": "SellerRatingDataService",
+                "Parameter": [
+                  {
+                    "ParameterName": "dbProvider",
+                    "Type": "ISellerRatingDbProvider",
+                    "PassToBaseClass": true
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "//empty constructor"
+              }
+            ],
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingDemoDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingdemohashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemohashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingPeriodDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingperiodhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryRatingDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryratinghashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryratinghashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingDemoAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingdemo",
+                    "Type": "RatingDemo",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemo.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoSqn\",ratingdemo.RatingDemoSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoName\",ratingdemo.RatingDemoName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingPeriodAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingperiod",
+                    "Type": "RatingPeriod",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiod.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodSqn\",ratingperiod.RatingPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodName\",ratingperiod.RatingPeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodStartDate\",ratingperiod.RatingPeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodEndDate\",ratingperiod.RatingPeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryRatingAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryrating",
+                    "Type": "SellableInventoryRating",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryrating.SellableInventoryRatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingSqn\",sellableinventoryrating.SellableInventoryRatingSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",sellableinventoryrating.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",sellableinventoryrating.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingValue\",sellableinventoryrating.SellableInventoryRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<Rating>>",
+                "ReferencesType": null,
+                "MethodName": "GetSellerRatingsByInventoryKeys",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorylist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<Rating>>",
+                "ReferencesType": null,
+                "MethodName": "GetSellerRatingsByRatingKeys",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryratinglist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingList\",sellableinventoryratinglist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByRatingKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              }
+            ],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 2,
+                "FieldName": "DefaultPageNumber",
+                "FieldType": "int",
+                "ReferencesType": null,
+                "IsReadonly": false,
+                "IsConst": false,
+                "IsStatic": false
+              },
+              {
+                "AccessModifier": 2,
+                "FieldName": "DefaultPageSize",
+                "FieldType": "int",
+                "ReferencesType": null,
+                "IsReadonly": false,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": null,
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [],
+              "Method": [],
+              "Property": [],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Implements": [
+              {
+                "InterfaceName": "ISellerRatingDataService",
+                "Namespace": null,
+                "Method": [],
+                "NamespaceRef": [],
+                "InheritsFrom": null,
+                "IsGeneric": false
+              }
+            ]
+          }
+        ],
+        "Interface": [
+          {
+            "InterfaceName": "ISellerRatingDbProvider",
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+            },
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "IDbConnection",
+                "ReferencesType": null,
+                "MethodName": "GetConnection",
+                "Parameter": [],
+                "CodeSnippetFile": null,
+                "CodeSnippet": null
+              }
+            ],
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              }
+            ],
+            "InheritsFrom": null,
+            "IsGeneric": false
+          },
+          {
+            "InterfaceName": "ISellerRatingDataService",
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+            },
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingDemoDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingdemohashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemohashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingPeriodDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingperiodhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryRatingDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryratinghashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryratinghashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingDemoAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingdemo",
+                    "Type": "RatingDemo",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",ratingdemo.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoSqn\",ratingdemo.RatingDemoSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoName\",ratingdemo.RatingDemoName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingDemoAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatingPeriodAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratingperiod",
+                    "Type": "RatingPeriod",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",ratingperiod.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodSqn\",ratingperiod.RatingPeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodName\",ratingperiod.RatingPeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodStartDate\",ratingperiod.RatingPeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodEndDate\",ratingperiod.RatingPeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.RatingPeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryRatingAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryrating",
+                    "Type": "SellableInventoryRating",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingHashKey\",sellableinventoryrating.SellableInventoryRatingHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrating.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingSqn\",sellableinventoryrating.SellableInventoryRatingSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatingDemoHashKey\",sellableinventoryrating.RatingDemoHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatingPeriodHashKey\",sellableinventoryrating.RatingPeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingValue\",sellableinventoryrating.SellableInventoryRatingValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrating.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRatingApi.SellableInventoryRatingAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<Rating>>",
+                "ReferencesType": null,
+                "MethodName": "GetSellerRatingsByInventoryKeys",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorylist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<Rating>>",
+                "ReferencesType": null,
+                "MethodName": "GetSellerRatingsByRatingKeys",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryratinglist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRatingList\",sellableinventoryratinglist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rating>(\r\n\t\t\t\t     \"SellerRating.GetSellerRatingsByRatingKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              }
+            ],
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Collections.Generic"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Threading.Tasks"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Videa.SellerRatingNS.Data.DataServices"
+                }
+              }
+            ],
+            "InheritsFrom": null,
+            "IsGeneric": false
+          }
+        ],
+        "Path": null,
+        "DefaultNamespace": null,
+        "AssemblyName": "Videa.SellerRating.Data",
+        "ProjectReference": [],
+        "NuGetReference": [
+          {
+            "NuGetName": "Dapper",
+            "Version": "1.50.2"
+          }
+        ],
+        "PostBuildEventStep": []
+      }
+    ],
+    "NuGetReference": [],
+    "PostBuildEventStep": []
+  }
+}

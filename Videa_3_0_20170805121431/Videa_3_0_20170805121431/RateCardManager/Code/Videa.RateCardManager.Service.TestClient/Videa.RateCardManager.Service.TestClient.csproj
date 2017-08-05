@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<Project Sdk="Microsoft.NET.Sdk" DefaultTargets="Build" ToolsVersion="4.0">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Videa.RateCardManager.Service\Videa.RateCardManager.Service.csproj">
+      <Project>{0f9d36a7-ff5d-985d-3885-f73d24f5c91a}</Project>
+      <Name>Videa.RateCardManager.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

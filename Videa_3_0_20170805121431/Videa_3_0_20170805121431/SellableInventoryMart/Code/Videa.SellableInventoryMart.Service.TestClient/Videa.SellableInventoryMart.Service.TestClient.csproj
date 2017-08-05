@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<Project Sdk="Microsoft.NET.Sdk" DefaultTargets="Build" ToolsVersion="4.0">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Videa.SellableInventoryMart.Service\Videa.SellableInventoryMart.Service.csproj">
+      <Project>{19d28752-ee3f-2857-1d8a-443fed3f722d}</Project>
+      <Name>Videa.SellableInventoryMart.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

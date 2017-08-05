@@ -1,0 +1,65 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+option csharp_namespace = "Videa.TrafficStatisticNS.Service.Proto.Types";
+
+service TrafficStatisticService {
+	rpc RatePeriodDelete (RatePeriodDeleteRequest) returns (RatePeriodDeleteResponse) {}
+	rpc SellableInventoryTrafficStatisticsDelete (SellableInventoryTrafficStatisticsDeleteRequest) returns (SellableInventoryTrafficStatisticsDeleteResponse) {}
+	rpc RatePeriodAddUpdate (RatePeriodAddUpdateRequest) returns (RatePeriodAddUpdateResponse) {}
+	rpc SellableInventoryTrafficStatisticsAddUpdate (SellableInventoryTrafficStatisticsAddUpdateRequest) returns (SellableInventoryTrafficStatisticsAddUpdateResponse) {}
+	rpc GetTrafficStatistics (GetTrafficStatisticsRequest) returns (GetTrafficStatisticsResponse) {}
+	rpc BulkStore (BulkStoreRequest) returns (BulkStoreResponse) {}
+}
+message RatePeriod {
+	string RatePeriodHashKey = 1; // 
+	int32 RatePeriodSqn = 2; // 
+	string RatePeriodName = 3; // 
+	google.protobuf.Timestamp RatePeriodStartDate = 4; // 
+	google.protobuf.Timestamp RatePeriodEndDate = 5; // 
+}
+message SellableInventoryTrafficStatistics {
+	string SellableInventoryTrafficStatisticHashKey = 1; // 
+	string SellableInventoryHashKey = 2; // 
+	int32 SellableInventoryTrafficStatisticSqn = 3; // 
+	string SellableInventoryAURValue = 4; // 
+	google.protobuf.Timestamp RowVersion = 5; // 
+}
+message TrafficStatistic {
+	int32 todo = 1; // 
+}
+message RatePeriodDeleteRequest {
+	string RatePeriodHashKey = 1; // 
+}
+message RatePeriodDeleteResponse {
+}
+message SellableInventoryTrafficStatisticsDeleteRequest {
+	string SellableInventoryTrafficStatisticHashKey = 1; // 
+}
+message SellableInventoryTrafficStatisticsDeleteResponse {
+}
+message RatePeriodAddUpdateRequest {
+	RatePeriod RatePeriod = 1; // 
+}
+message RatePeriodAddUpdateResponse {
+}
+message SellableInventoryTrafficStatisticsAddUpdateRequest {
+	SellableInventoryTrafficStatistics SellableInventoryTrafficStatistics = 1; // 
+}
+message SellableInventoryTrafficStatisticsAddUpdateResponse {
+}
+message GetTrafficStatisticsRequest {
+	string SellableInventoryList = 1; // 
+}
+message GetTrafficStatisticsResponse {
+	repeated TrafficStatistic TrafficStatistic = 1; // 
+}
+message BulkStoreRequest {
+	repeated RatePeriod RatePeriod = 1; // 
+	repeated SellableInventoryTrafficStatistics SellableInventoryTrafficStatistics = 2; // 
+	repeated TrafficStatistic TrafficStatistic = 3; // 
+}
+message BulkStoreResponse {
+}
+

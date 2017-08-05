@@ -1,0 +1,95 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+option csharp_namespace = "Videa.SellerRateNS.Service.Proto.Types";
+
+service SellerRateService {
+	rpc RateTierDelete (RateTierDeleteRequest) returns (RateTierDeleteResponse) {}
+	rpc RatePeriodDelete (RatePeriodDeleteRequest) returns (RatePeriodDeleteResponse) {}
+	rpc SellableInventoryRateDelete (SellableInventoryRateDeleteRequest) returns (SellableInventoryRateDeleteResponse) {}
+	rpc RateTierAddUpdate (RateTierAddUpdateRequest) returns (RateTierAddUpdateResponse) {}
+	rpc RatePeriodAddUpdate (RatePeriodAddUpdateRequest) returns (RatePeriodAddUpdateResponse) {}
+	rpc SellableInventoryRateAddUpdate (SellableInventoryRateAddUpdateRequest) returns (SellableInventoryRateAddUpdateResponse) {}
+	rpc GetSellerRatesByInventoryKeys (GetSellerRatesByInventoryKeysRequest) returns (GetSellerRatesByInventoryKeysResponse) {}
+	rpc GetSellerRatesByRateKeys (GetSellerRatesByRateKeysRequest) returns (GetSellerRatesByRateKeysResponse) {}
+	rpc BulkStore (BulkStoreRequest) returns (BulkStoreResponse) {}
+}
+message RateTier {
+	string RateTierHashKey = 1; // 
+	int32 RateTierSqn = 2; // 
+	string RateTierName = 3; // 
+}
+message RatePeriod {
+	string RatePeriodHashKey = 1; // 
+	int32 RatePeriodSqn = 2; // 
+	string RatePeriodName = 3; // 
+	google.protobuf.Timestamp RatePeriodStartDate = 4; // 
+	google.protobuf.Timestamp RatePeriodEndDate = 5; // 
+}
+message SellableInventoryRate {
+	string SellableInventoryRateHashKey = 1; // 
+	string SellableInventoryHashKey = 2; // 
+	int32 SellableInventoryRateSqn = 3; // 
+	string RateTierHashKey = 4; // 
+	string RatePeriodHashKey = 5; // 
+	string SellableInventoryRateValue = 6; // 
+	google.protobuf.Timestamp RowVersion = 7; // 
+}
+message Rate {
+	string SellableInventoryRateValue = 1; // 
+	string SellableInventoryHashKey = 2; // 
+	string SellableInventoryRateHashKey = 3; // 
+	string RateTierHashKey = 4; // 
+}
+message RateTierDeleteRequest {
+	string RateTierHashKey = 1; // 
+}
+message RateTierDeleteResponse {
+}
+message RatePeriodDeleteRequest {
+	string RatePeriodHashKey = 1; // 
+}
+message RatePeriodDeleteResponse {
+}
+message SellableInventoryRateDeleteRequest {
+	string SellableInventoryRateHashKey = 1; // 
+}
+message SellableInventoryRateDeleteResponse {
+}
+message RateTierAddUpdateRequest {
+	RateTier RateTier = 1; // 
+}
+message RateTierAddUpdateResponse {
+}
+message RatePeriodAddUpdateRequest {
+	RatePeriod RatePeriod = 1; // 
+}
+message RatePeriodAddUpdateResponse {
+}
+message SellableInventoryRateAddUpdateRequest {
+	SellableInventoryRate SellableInventoryRate = 1; // 
+}
+message SellableInventoryRateAddUpdateResponse {
+}
+message GetSellerRatesByInventoryKeysRequest {
+	string SellableInventoryList = 1; // 
+}
+message GetSellerRatesByInventoryKeysResponse {
+	repeated Rate Rate = 1; // 
+}
+message GetSellerRatesByRateKeysRequest {
+	string SellableInventoryRateList = 1; // 
+}
+message GetSellerRatesByRateKeysResponse {
+	repeated Rate Rate = 1; // 
+}
+message BulkStoreRequest {
+	repeated RateTier RateTier = 1; // 
+	repeated RatePeriod RatePeriod = 2; // 
+	repeated SellableInventoryRate SellableInventoryRate = 3; // 
+	repeated Rate Rate = 4; // 
+}
+message BulkStoreResponse {
+}
+

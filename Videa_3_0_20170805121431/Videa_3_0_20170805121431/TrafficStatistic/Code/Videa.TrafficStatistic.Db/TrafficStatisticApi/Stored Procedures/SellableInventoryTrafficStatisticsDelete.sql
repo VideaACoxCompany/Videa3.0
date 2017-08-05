@@ -1,0 +1,5 @@
+﻿CREATE PROCEDURE TrafficStatisticApi.SellableInventoryTrafficStatisticsDelete
+@SellableInventoryTrafficStatisticHashKey CHAR (32)
+AS
+DELETE [TrafficStatistic].[SellableInventoryTrafficStatistics]
+WHERE  SellableInventoryTrafficStatisticHashKey = @SellableInventoryTrafficStatisticHashKey;

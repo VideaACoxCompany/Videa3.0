@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+option csharp_namespace = "Videa.RatingCuration.Service.Proto.Types";
+
+service RatingCurationService {
+	rpc CurateSellerRatings (CurateSellerRatingsRequest) returns (CurateSellerRatingsResponse) {}
+}
+message CurateSellerRatingsRequest {
+}
+message CurateSellerRatingsResponse {
+}
+

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<Project Sdk="Microsoft.NET.Sdk" DefaultTargets="Build" ToolsVersion="4.0">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Videa.RateCuration.Service\Videa.RateCuration.Service.csproj">
+      <Project>{5fa8f28b-e239-8de4-490e-a4d067db6d42}</Project>
+      <Name>Videa.RateCuration.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videa.RateCuration.Service", "Code\Videa.RateCuration.Service\Videa.RateCuration.Service.csproj", "{4093B5A5-8A1A-49A6-93BE-1AC848734AED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videa.RateCuration.Service.TestClient", "Code\Videa.RateCuration.Service.TestClient\Videa.RateCuration.Service.TestClient.csproj", "{1549986C-2BC1-4C11-AA41-B73EF980CEBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4093B5A5-8A1A-49A6-93BE-1AC848734AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4093B5A5-8A1A-49A6-93BE-1AC848734AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4093B5A5-8A1A-49A6-93BE-1AC848734AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4093B5A5-8A1A-49A6-93BE-1AC848734AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1549986C-2BC1-4C11-AA41-B73EF980CEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1549986C-2BC1-4C11-AA41-B73EF980CEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1549986C-2BC1-4C11-AA41-B73EF980CEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1549986C-2BC1-4C11-AA41-B73EF980CEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

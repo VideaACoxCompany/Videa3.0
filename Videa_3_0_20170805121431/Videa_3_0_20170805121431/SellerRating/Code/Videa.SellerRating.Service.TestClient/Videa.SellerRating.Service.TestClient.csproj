@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<Project Sdk="Microsoft.NET.Sdk" DefaultTargets="Build" ToolsVersion="4.0">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Videa.SellerRating.Service\Videa.SellerRating.Service.csproj">
+      <Project>{4030ec97-48db-ed05-2454-14c2bb0c263e}</Project>
+      <Name>Videa.SellerRating.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SIMAudit]
+    AUTHORIZATION [dbo];
+

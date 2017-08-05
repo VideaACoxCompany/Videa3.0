@@ -1,0 +1,3372 @@
+﻿{
+  "ProtoSyntax": "proto3",
+  "Package": null,
+  "Import": [
+    "google/protobuf/timestamp.proto",
+    "google/protobuf/duration.proto"
+  ],
+  "ProtoService": [
+    {
+      "ServiceName": "SellerRateService",
+      "Rpc": [
+        {
+          "RpcName": "RateTierDelete",
+          "Request": {
+            "MessageName": "RateTierDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RateTierHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RateTierDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "RatePeriodDelete",
+          "Request": {
+            "MessageName": "RatePeriodDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatePeriodHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RatePeriodDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "SellableInventoryRateDelete",
+          "Request": {
+            "MessageName": "SellableInventoryRateDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryRateHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "SellableInventoryRateDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "RateTierAddUpdate",
+          "Request": {
+            "MessageName": "RateTierAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RateTier",
+                "MessageType": "RateTier",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RateTierAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "RatePeriodAddUpdate",
+          "Request": {
+            "MessageName": "RatePeriodAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatePeriod",
+                "MessageType": "RatePeriod",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RatePeriodAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "SellableInventoryRateAddUpdate",
+          "Request": {
+            "MessageName": "SellableInventoryRateAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryRate",
+                "MessageType": "SellableInventoryRate",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "SellableInventoryRateAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "GetSellerRatesByInventoryKeys",
+          "Request": {
+            "MessageName": "GetSellerRatesByInventoryKeysRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryList",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "GetSellerRatesByInventoryKeysResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "Rate",
+                "MessageType": "Rate",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "DtoName": "Rate"
+        },
+        {
+          "RpcName": "GetSellerRatesByRateKeys",
+          "Request": {
+            "MessageName": "GetSellerRatesByRateKeysRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryRateList",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "GetSellerRatesByRateKeysResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "Rate",
+                "MessageType": "Rate",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "DtoName": "Rate"
+        },
+        {
+          "RpcName": "BulkStore",
+          "Request": {
+            "MessageName": "BulkStoreRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RateTier",
+                "MessageType": "RateTier",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "RatePeriod",
+                "MessageType": "RatePeriod",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "SellableInventoryRate",
+                "MessageType": "SellableInventoryRate",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "Rate",
+                "MessageType": "Rate",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "BulkStoreResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        }
+      ]
+    }
+  ],
+  "ProtoMessage": [
+    {
+      "MessageName": "RateTier",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "RateTierHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RateTierSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RateTierName",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "RatePeriod",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "RatePeriodHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatePeriodSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatePeriodName",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatePeriodStartDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatePeriodEndDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "SellableInventoryRate",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "SellableInventoryRateHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryRateSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RateTierHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatePeriodHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryRateValue",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RowVersion",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "Rate",
+      "IsRequest": false,
+      "IsResponse": true,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "SellableInventoryRateValue",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryRateHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RateTierHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    }
+  ],
+  "Option": [
+    "csharp_namespace = \"Videa.SellerRateNS.Service.Proto.Types\";"
+  ],
+  "OwnedByProject": {
+    "ProjectIs": 0,
+    "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreConsoleApp\\NetCoreConsoleApp.csproj",
+    "SolutionFolder": null,
+    "ProjectFolder": "Code\\Videa.SellerRate.Service",
+    "ProjectID": null,
+    "ProjectName": "Videa.SellerRate.Service",
+    "ProjectShortName": "SellerRate.Service",
+    "ProjectType": 0,
+    "FileName": "Videa.SellerRate.Service.csproj",
+    "ProjectGuid": "5a902d06-a33d-9a51-4313-16de5ecee623",
+    "ProjectContent": [],
+    "Class": [],
+    "Interface": [],
+    "Path": null,
+    "DefaultNamespace": null,
+    "AssemblyName": "Videa.SellerRate.Service",
+    "ProjectReference": [
+      {
+        "ProjectIs": 2,
+        "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreClassLibrary\\NetCoreClassLibrary.csproj",
+        "SolutionFolder": null,
+        "ProjectFolder": "Code\\Videa.SellerRate.Data",
+        "ProjectID": null,
+        "ProjectName": "Videa.SellerRate.Data",
+        "ProjectShortName": "SellerRate.Data",
+        "ProjectType": 0,
+        "FileName": "Videa.SellerRate.Data.csproj",
+        "ProjectGuid": "9e43cb13-a4b7-dca0-7c90-fca37def7070",
+        "ProjectContent": [
+          {
+            "Content": {
+              "InterfaceName": "ISellerRateDbProvider",
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": null
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Interface": {
+              "InterfaceName": "ISellerRateDbProvider",
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": null
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Class": null,
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "ISellerRateDbProvider.cs",
+              "Folder": "Providers",
+              "Path": "Providers\\ISellerRateDbProvider.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellerRateDbProvider",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "SellerRateDbProvider",
+                  "Parameter": [
+                    {
+                      "ParameterName": "connectionString",
+                      "Type": "string",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "return new SqlConnection(_connectionString);"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "_connectionString",
+                  "FieldType": "string",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": [
+                {
+                  "InterfaceName": "ISellerRateDbProvider",
+                  "Namespace": {
+                    "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+                  },
+                  "Method": [
+                    {
+                      "AccessModifier": 0,
+                      "SignatureOnly": true,
+                      "IsOverride": false,
+                      "IsAbstract": false,
+                      "IsStatic": false,
+                      "IsAsync": false,
+                      "IsExtensionMethod": false,
+                      "ReturnType": "IDbConnection",
+                      "ReferencesType": null,
+                      "MethodName": "GetConnection",
+                      "Parameter": [],
+                      "CodeSnippetFile": null,
+                      "CodeSnippet": null
+                    }
+                  ],
+                  "NamespaceRef": [
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data"
+                      }
+                    },
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data.SqlClient"
+                      }
+                    }
+                  ],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellerRateDbProvider",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "SellerRateDbProvider",
+                  "Parameter": [
+                    {
+                      "ParameterName": "connectionString",
+                      "Type": "string",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "return new SqlConnection(_connectionString);"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "_connectionString",
+                  "FieldType": "string",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": [
+                {
+                  "InterfaceName": "ISellerRateDbProvider",
+                  "Namespace": {
+                    "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+                  },
+                  "Method": [
+                    {
+                      "AccessModifier": 0,
+                      "SignatureOnly": true,
+                      "IsOverride": false,
+                      "IsAbstract": false,
+                      "IsStatic": false,
+                      "IsAsync": false,
+                      "IsExtensionMethod": false,
+                      "ReturnType": "IDbConnection",
+                      "ReferencesType": null,
+                      "MethodName": "GetConnection",
+                      "Parameter": [],
+                      "CodeSnippetFile": null,
+                      "CodeSnippet": null
+                    }
+                  ],
+                  "NamespaceRef": [
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data"
+                      }
+                    },
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data.SqlClient"
+                      }
+                    }
+                  ],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "SellerRateDbProvider.cs",
+              "Folder": "Providers",
+              "Path": "Providers\\SellerRateDbProvider.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": true,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 1,
+                  "ConstructorName": "BaseDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ISellerRateDbProvider",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+                }
+              ],
+              "Method": [],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 1,
+                  "FieldName": "DbProvider",
+                  "FieldType": "ISellerRateDbProvider",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": true,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 1,
+                  "ConstructorName": "BaseDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ISellerRateDbProvider",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+                }
+              ],
+              "Method": [],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 1,
+                  "FieldName": "DbProvider",
+                  "FieldType": "ISellerRateDbProvider",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "BaseDataService.cs",
+              "Folder": "DataServices\\Base",
+              "Path": "DataServices\\Base\\BaseDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RateTier",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RateTierHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RateTierSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RateTierName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RateTier",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RateTierHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RateTierSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RateTierName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "RateTier.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\RateTier.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RatePeriod",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodStartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodEndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RatePeriod",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodStartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodEndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "RatePeriod.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\RatePeriod.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellableInventoryRate",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRateHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRateSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RateTierHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRateValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RowVersion",
+                  "Type": "Byte[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellableInventoryRate",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRateHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRateSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RateTierHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRateValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RowVersion",
+                  "Type": "Byte[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "SellableInventoryRate.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\SellableInventoryRate.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "Rate",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRateValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 8
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRateHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RateTierHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "Rate",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRateValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 8
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryRateHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RateTierHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "Rate.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\Rate.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "InterfaceName": "ISellerRateDataService",
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RateTierDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratetierhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetierhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRateDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratehashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryratehashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RateTierAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratetier",
+                      "Type": "RateTier",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetier.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RateTierSqn\",ratetier.RateTierSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierName\",ratetier.RateTierName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiod",
+                      "Type": "RatePeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRateAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryrate",
+                      "Type": "SellableInventoryRate",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryrate.SellableInventoryRateHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrate.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateSqn\",sellableinventoryrate.SellableInventoryRateSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",sellableinventoryrate.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",sellableinventoryrate.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateValue\",sellableinventoryrate.SellableInventoryRateValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrate.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rate>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatesByInventoryKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rate>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatesByRateKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratelist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateList\",sellableinventoryratelist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByRateKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Interface": {
+              "InterfaceName": "ISellerRateDataService",
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RateTierDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratetierhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetierhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRateDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratehashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryratehashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RateTierAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratetier",
+                      "Type": "RateTier",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetier.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RateTierSqn\",ratetier.RateTierSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierName\",ratetier.RateTierName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiod",
+                      "Type": "RatePeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRateAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryrate",
+                      "Type": "SellableInventoryRate",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryrate.SellableInventoryRateHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrate.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateSqn\",sellableinventoryrate.SellableInventoryRateSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",sellableinventoryrate.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",sellableinventoryrate.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateValue\",sellableinventoryrate.SellableInventoryRateValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrate.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rate>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatesByInventoryKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rate>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatesByRateKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratelist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateList\",sellableinventoryratelist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByRateKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Class": null,
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "ISellerRateDataService.cs",
+              "Folder": "DataServices",
+              "Path": "DataServices\\ISellerRateDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Linq"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Dapper"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellerRateDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "SellerRateDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ISellerRateDbProvider",
+                      "PassToBaseClass": true
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "//empty constructor"
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RateTierDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratetierhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetierhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRateDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratehashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryratehashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RateTierAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratetier",
+                      "Type": "RateTier",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetier.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RateTierSqn\",ratetier.RateTierSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierName\",ratetier.RateTierName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiod",
+                      "Type": "RatePeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRateAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryrate",
+                      "Type": "SellableInventoryRate",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryrate.SellableInventoryRateHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrate.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateSqn\",sellableinventoryrate.SellableInventoryRateSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",sellableinventoryrate.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",sellableinventoryrate.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateValue\",sellableinventoryrate.SellableInventoryRateValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrate.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rate>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatesByInventoryKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rate>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatesByRateKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratelist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateList\",sellableinventoryratelist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByRateKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageNumber",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                },
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageSize",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": {
+                "NamespaceRef": [],
+                "AccessModifier": 0,
+                "IsAbstract": false,
+                "Namespace": null,
+                "IsStatic": false,
+                "ClassName": "BaseDataService",
+                "Constructor": [],
+                "Method": [],
+                "Property": [],
+                "Field": [],
+                "InheritsFrom": null,
+                "Implements": []
+              },
+              "Implements": [
+                {
+                  "InterfaceName": "ISellerRateDataService",
+                  "Namespace": null,
+                  "Method": [],
+                  "NamespaceRef": [],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Linq"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Dapper"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellerRateDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "SellerRateDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ISellerRateDbProvider",
+                      "PassToBaseClass": true
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "//empty constructor"
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RateTierDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratetierhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetierhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRateDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratehashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryratehashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RateTierAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "ratetier",
+                      "Type": "RateTier",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetier.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RateTierSqn\",ratetier.RateTierSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierName\",ratetier.RateTierName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiod",
+                      "Type": "RatePeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryRateAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryrate",
+                      "Type": "SellableInventoryRate",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryrate.SellableInventoryRateHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrate.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateSqn\",sellableinventoryrate.SellableInventoryRateSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",sellableinventoryrate.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",sellableinventoryrate.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateValue\",sellableinventoryrate.SellableInventoryRateValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrate.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rate>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatesByInventoryKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<Rate>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetSellerRatesByRateKeys",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventoryratelist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateList\",sellableinventoryratelist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByRateKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageNumber",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                },
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageSize",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": {
+                "NamespaceRef": [],
+                "AccessModifier": 0,
+                "IsAbstract": false,
+                "Namespace": null,
+                "IsStatic": false,
+                "ClassName": "BaseDataService",
+                "Constructor": [],
+                "Method": [],
+                "Property": [],
+                "Field": [],
+                "InheritsFrom": null,
+                "Implements": []
+              },
+              "Implements": [
+                {
+                  "InterfaceName": "ISellerRateDataService",
+                  "Namespace": null,
+                  "Method": [],
+                  "NamespaceRef": [],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "SellerRateDataService.cs",
+              "Folder": "DataServices",
+              "Path": "DataServices\\SellerRateDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          }
+        ],
+        "Class": [
+          {
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              }
+            ],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "SellerRateDbProvider",
+            "Constructor": [
+              {
+                "AccessModifier": 0,
+                "ConstructorName": "SellerRateDbProvider",
+                "Parameter": [
+                  {
+                    "ParameterName": "connectionString",
+                    "Type": "string",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+              }
+            ],
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "IDbConnection",
+                "ReferencesType": null,
+                "MethodName": "GetConnection",
+                "Parameter": [],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "return new SqlConnection(_connectionString);"
+              }
+            ],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 2,
+                "FieldName": "_connectionString",
+                "FieldType": "string",
+                "ReferencesType": null,
+                "IsReadonly": true,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": null,
+            "Implements": [
+              {
+                "InterfaceName": "ISellerRateDbProvider",
+                "Namespace": {
+                  "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+                },
+                "Method": [
+                  {
+                    "AccessModifier": 0,
+                    "SignatureOnly": true,
+                    "IsOverride": false,
+                    "IsAbstract": false,
+                    "IsStatic": false,
+                    "IsAsync": false,
+                    "IsExtensionMethod": false,
+                    "ReturnType": "IDbConnection",
+                    "ReferencesType": null,
+                    "MethodName": "GetConnection",
+                    "Parameter": [],
+                    "CodeSnippetFile": null,
+                    "CodeSnippet": null
+                  }
+                ],
+                "NamespaceRef": [
+                  {
+                    "ReferenceTo": {
+                      "NamespaceName": "System.Data"
+                    }
+                  },
+                  {
+                    "ReferenceTo": {
+                      "NamespaceName": "System.Data.SqlClient"
+                    }
+                  }
+                ],
+                "InheritsFrom": null,
+                "IsGeneric": false
+              }
+            ]
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": true,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "BaseDataService",
+            "Constructor": [
+              {
+                "AccessModifier": 1,
+                "ConstructorName": "BaseDataService",
+                "Parameter": [
+                  {
+                    "ParameterName": "dbProvider",
+                    "Type": "ISellerRateDbProvider",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+              }
+            ],
+            "Method": [],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 1,
+                "FieldName": "DbProvider",
+                "FieldType": "ISellerRateDbProvider",
+                "ReferencesType": null,
+                "IsReadonly": true,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "RateTier",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RateTierHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RateTierSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RateTierName",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "RatePeriod",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatePeriodHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatePeriodSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatePeriodName",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatePeriodStartDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatePeriodEndDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "SellableInventoryRate",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryRateHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryRateSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RateTierHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatePeriodHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryRateValue",
+                "Type": "Decimal",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RowVersion",
+                "Type": "Byte[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "Rate",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryRateValue",
+                "Type": "Decimal",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 8
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryRateHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RateTierHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Linq"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Collections.Generic"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Threading.Tasks"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Dapper"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+                }
+              }
+            ],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "SellerRateDataService",
+            "Constructor": [
+              {
+                "AccessModifier": 0,
+                "ConstructorName": "SellerRateDataService",
+                "Parameter": [
+                  {
+                    "ParameterName": "dbProvider",
+                    "Type": "ISellerRateDbProvider",
+                    "PassToBaseClass": true
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "//empty constructor"
+              }
+            ],
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RateTierDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratetierhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetierhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatePeriodDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "rateperiodhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryRateDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryratehashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryratehashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RateTierAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratetier",
+                    "Type": "RateTier",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetier.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RateTierSqn\",ratetier.RateTierSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierName\",ratetier.RateTierName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatePeriodAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "rateperiod",
+                    "Type": "RatePeriod",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryRateAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryrate",
+                    "Type": "SellableInventoryRate",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryrate.SellableInventoryRateHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrate.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateSqn\",sellableinventoryrate.SellableInventoryRateSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",sellableinventoryrate.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",sellableinventoryrate.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateValue\",sellableinventoryrate.SellableInventoryRateValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrate.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<Rate>>",
+                "ReferencesType": null,
+                "MethodName": "GetSellerRatesByInventoryKeys",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorylist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<Rate>>",
+                "ReferencesType": null,
+                "MethodName": "GetSellerRatesByRateKeys",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryratelist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateList\",sellableinventoryratelist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByRateKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              }
+            ],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 2,
+                "FieldName": "DefaultPageNumber",
+                "FieldType": "int",
+                "ReferencesType": null,
+                "IsReadonly": false,
+                "IsConst": false,
+                "IsStatic": false
+              },
+              {
+                "AccessModifier": 2,
+                "FieldName": "DefaultPageSize",
+                "FieldType": "int",
+                "ReferencesType": null,
+                "IsReadonly": false,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": null,
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [],
+              "Method": [],
+              "Property": [],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Implements": [
+              {
+                "InterfaceName": "ISellerRateDataService",
+                "Namespace": null,
+                "Method": [],
+                "NamespaceRef": [],
+                "InheritsFrom": null,
+                "IsGeneric": false
+              }
+            ]
+          }
+        ],
+        "Interface": [
+          {
+            "InterfaceName": "ISellerRateDbProvider",
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+            },
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "IDbConnection",
+                "ReferencesType": null,
+                "MethodName": "GetConnection",
+                "Parameter": [],
+                "CodeSnippetFile": null,
+                "CodeSnippet": null
+              }
+            ],
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              }
+            ],
+            "InheritsFrom": null,
+            "IsGeneric": false
+          },
+          {
+            "InterfaceName": "ISellerRateDataService",
+            "Namespace": {
+              "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+            },
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RateTierDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratetierhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetierhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatePeriodDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "rateperiodhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryRateDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryratehashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryratehashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RateTierAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "ratetier",
+                    "Type": "RateTier",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",ratetier.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RateTierSqn\",ratetier.RateTierSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierName\",ratetier.RateTierName, DbType.AnsiString);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RateTierAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatePeriodAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "rateperiod",
+                    "Type": "RatePeriod",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryRateAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryrate",
+                    "Type": "SellableInventoryRate",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateHashKey\",sellableinventoryrate.SellableInventoryRateHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventoryrate.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateSqn\",sellableinventoryrate.SellableInventoryRateSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RateTierHashKey\",sellableinventoryrate.RateTierHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",sellableinventoryrate.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateValue\",sellableinventoryrate.SellableInventoryRateValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventoryrate.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"SellerRateApi.SellableInventoryRateAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<Rate>>",
+                "ReferencesType": null,
+                "MethodName": "GetSellerRatesByInventoryKeys",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorylist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByInventoryKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<Rate>>",
+                "ReferencesType": null,
+                "MethodName": "GetSellerRatesByRateKeys",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventoryratelist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryRateList\",sellableinventoryratelist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<Rate>(\r\n\t\t\t\t     \"SellerRate.GetSellerRatesByRateKeys\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              }
+            ],
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Collections.Generic"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Threading.Tasks"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Videa.SellerRateNS.Data.DataServices"
+                }
+              }
+            ],
+            "InheritsFrom": null,
+            "IsGeneric": false
+          }
+        ],
+        "Path": null,
+        "DefaultNamespace": null,
+        "AssemblyName": "Videa.SellerRate.Data",
+        "ProjectReference": [],
+        "NuGetReference": [
+          {
+            "NuGetName": "Dapper",
+            "Version": "1.50.2"
+          }
+        ],
+        "PostBuildEventStep": []
+      }
+    ],
+    "NuGetReference": [],
+    "PostBuildEventStep": []
+  }
+}

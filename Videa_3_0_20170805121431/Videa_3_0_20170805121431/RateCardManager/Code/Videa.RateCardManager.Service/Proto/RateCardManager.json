@@ -1,0 +1,58 @@
+﻿{
+  "ProtoSyntax": "proto3",
+  "Package": null,
+  "Import": [
+    "google/protobuf/timestamp.proto",
+    "google/protobuf/duration.proto"
+  ],
+  "ProtoService": [
+    {
+      "ServiceName": "RateCardManagerService",
+      "Rpc": [
+        {
+          "RpcName": "GetRateCard",
+          "Request": {
+            "MessageName": "GetRateCardRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "Response": {
+            "MessageName": "GetRateCardResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        }
+      ]
+    }
+  ],
+  "ProtoMessage": [],
+  "Option": [
+    "csharp_namespace = \"Videa.RateCardManager.Service.Proto.Types\";"
+  ],
+  "OwnedByProject": {
+    "ProjectIs": 100,
+    "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreConsoleApp\\NetCoreConsoleApp.csproj",
+    "SolutionFolder": null,
+    "ProjectFolder": "Code\\Videa.RateCardManager.Service",
+    "ProjectID": null,
+    "ProjectName": "Videa.RateCardManager.Service",
+    "ProjectShortName": "RateCardManager.Service",
+    "ProjectType": 0,
+    "FileName": "Videa.RateCardManager.Service.csproj",
+    "ProjectGuid": "0f9d36a7-ff5d-985d-3885-f73d24f5c91a",
+    "ProjectContent": [],
+    "Class": [],
+    "Interface": [],
+    "Path": null,
+    "DefaultNamespace": null,
+    "AssemblyName": "Videa.RateCardManager.Service",
+    "ProjectReference": [],
+    "NuGetReference": [],
+    "PostBuildEventStep": []
+  }
+}

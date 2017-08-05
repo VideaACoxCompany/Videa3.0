@@ -1,0 +1,58 @@
+﻿{
+  "ProtoSyntax": "proto3",
+  "Package": null,
+  "Import": [
+    "google/protobuf/timestamp.proto",
+    "google/protobuf/duration.proto"
+  ],
+  "ProtoService": [
+    {
+      "ServiceName": "RatingCurationService",
+      "Rpc": [
+        {
+          "RpcName": "CurateSellerRatings",
+          "Request": {
+            "MessageName": "CurateSellerRatingsRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "Response": {
+            "MessageName": "CurateSellerRatingsResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        }
+      ]
+    }
+  ],
+  "ProtoMessage": [],
+  "Option": [
+    "csharp_namespace = \"Videa.RatingCuration.Service.Proto.Types\";"
+  ],
+  "OwnedByProject": {
+    "ProjectIs": 100,
+    "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreConsoleApp\\NetCoreConsoleApp.csproj",
+    "SolutionFolder": null,
+    "ProjectFolder": "Code\\Videa.RatingCuration.Service",
+    "ProjectID": null,
+    "ProjectName": "Videa.RatingCuration.Service",
+    "ProjectShortName": "RatingCuration.Service",
+    "ProjectType": 0,
+    "FileName": "Videa.RatingCuration.Service.csproj",
+    "ProjectGuid": "ee2746e8-56f7-c0f8-255a-53909e6e1466",
+    "ProjectContent": [],
+    "Class": [],
+    "Interface": [],
+    "Path": null,
+    "DefaultNamespace": null,
+    "AssemblyName": "Videa.RatingCuration.Service",
+    "ProjectReference": [],
+    "NuGetReference": [],
+    "PostBuildEventStep": []
+  }
+}

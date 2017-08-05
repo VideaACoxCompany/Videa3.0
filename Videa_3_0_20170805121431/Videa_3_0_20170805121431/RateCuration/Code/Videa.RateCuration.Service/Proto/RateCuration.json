@@ -1,0 +1,94 @@
+﻿{
+  "ProtoSyntax": "proto3",
+  "Package": null,
+  "Import": [
+    "google/protobuf/timestamp.proto",
+    "google/protobuf/duration.proto"
+  ],
+  "ProtoService": [
+    {
+      "ServiceName": "RateCurationService",
+      "Rpc": [
+        {
+          "RpcName": "CurateSellerRates",
+          "Request": {
+            "MessageName": "CurateSellerRatesRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "Response": {
+            "MessageName": "CurateSellerRatesResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "CuratePricingEngineRates",
+          "Request": {
+            "MessageName": "CuratePricingEngineRatesRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "Response": {
+            "MessageName": "CuratePricingEngineRatesResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "CurateSharebuilderRates",
+          "Request": {
+            "MessageName": "CurateSharebuilderRatesRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "Response": {
+            "MessageName": "CurateSharebuilderRatesResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        }
+      ]
+    }
+  ],
+  "ProtoMessage": [],
+  "Option": [
+    "csharp_namespace = \"Videa.RateCuration.Service.Proto.Types\";"
+  ],
+  "OwnedByProject": {
+    "ProjectIs": 100,
+    "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreConsoleApp\\NetCoreConsoleApp.csproj",
+    "SolutionFolder": null,
+    "ProjectFolder": "Code\\Videa.RateCuration.Service",
+    "ProjectID": null,
+    "ProjectName": "Videa.RateCuration.Service",
+    "ProjectShortName": "RateCuration.Service",
+    "ProjectType": 0,
+    "FileName": "Videa.RateCuration.Service.csproj",
+    "ProjectGuid": "5fa8f28b-e239-8de4-490e-a4d067db6d42",
+    "ProjectContent": [],
+    "Class": [],
+    "Interface": [],
+    "Path": null,
+    "DefaultNamespace": null,
+    "AssemblyName": "Videa.RateCuration.Service",
+    "ProjectReference": [],
+    "NuGetReference": [],
+    "PostBuildEventStep": []
+  }
+}

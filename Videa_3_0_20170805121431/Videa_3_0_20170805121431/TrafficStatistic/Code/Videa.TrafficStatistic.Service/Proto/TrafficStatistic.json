@@ -1,0 +1,2531 @@
+﻿{
+  "ProtoSyntax": "proto3",
+  "Package": null,
+  "Import": [
+    "google/protobuf/timestamp.proto",
+    "google/protobuf/duration.proto"
+  ],
+  "ProtoService": [
+    {
+      "ServiceName": "TrafficStatisticService",
+      "Rpc": [
+        {
+          "RpcName": "RatePeriodDelete",
+          "Request": {
+            "MessageName": "RatePeriodDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatePeriodHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RatePeriodDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "SellableInventoryTrafficStatisticsDelete",
+          "Request": {
+            "MessageName": "SellableInventoryTrafficStatisticsDeleteRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryTrafficStatisticHashKey",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "SellableInventoryTrafficStatisticsDeleteResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "RatePeriodAddUpdate",
+          "Request": {
+            "MessageName": "RatePeriodAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatePeriod",
+                "MessageType": "RatePeriod",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "RatePeriodAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "SellableInventoryTrafficStatisticsAddUpdate",
+          "Request": {
+            "MessageName": "SellableInventoryTrafficStatisticsAddUpdateRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryTrafficStatistics",
+                "MessageType": "SellableInventoryTrafficStatistics",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "SellableInventoryTrafficStatisticsAddUpdateResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        },
+        {
+          "RpcName": "GetTrafficStatistics",
+          "Request": {
+            "MessageName": "GetTrafficStatisticsRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "SellableInventoryList",
+                "MessageType": null,
+                "FieldType": 5,
+                "Required": false,
+                "Singular": false,
+                "Repeated": false,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": true
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "GetTrafficStatisticsResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "TrafficStatistic",
+                "MessageType": "TrafficStatistic",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "DtoName": "TrafficStatistic"
+        },
+        {
+          "RpcName": "BulkStore",
+          "Request": {
+            "MessageName": "BulkStoreRequest",
+            "IsRequest": true,
+            "IsResponse": false,
+            "HasFields": true,
+            "ProtoField": [
+              {
+                "FieldName": "RatePeriod",
+                "MessageType": "RatePeriod",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "SellableInventoryTrafficStatistics",
+                "MessageType": "SellableInventoryTrafficStatistics",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              },
+              {
+                "FieldName": "TrafficStatistic",
+                "MessageType": "TrafficStatistic",
+                "FieldType": 0,
+                "Required": false,
+                "Singular": false,
+                "Repeated": true,
+                "Optional": false,
+                "Comment": null,
+                "IsScalar": false
+              }
+            ]
+          },
+          "Response": {
+            "MessageName": "BulkStoreResponse",
+            "IsRequest": false,
+            "IsResponse": true,
+            "HasFields": false,
+            "ProtoField": []
+          },
+          "DtoName": null
+        }
+      ]
+    }
+  ],
+  "ProtoMessage": [
+    {
+      "MessageName": "RatePeriod",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "RatePeriodHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatePeriodSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatePeriodName",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatePeriodStartDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RatePeriodEndDate",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "SellableInventoryTrafficStatistics",
+      "IsRequest": true,
+      "IsResponse": false,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "SellableInventoryTrafficStatisticHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryHashKey",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryTrafficStatisticSqn",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "SellableInventoryAURValue",
+          "MessageType": null,
+          "FieldType": 5,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        },
+        {
+          "FieldName": "RowVersion",
+          "MessageType": null,
+          "FieldType": 7,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    },
+    {
+      "MessageName": "TrafficStatistic",
+      "IsRequest": false,
+      "IsResponse": true,
+      "HasFields": true,
+      "ProtoField": [
+        {
+          "FieldName": "todo",
+          "MessageType": null,
+          "FieldType": 2,
+          "Required": false,
+          "Singular": false,
+          "Repeated": false,
+          "Optional": false,
+          "Comment": null,
+          "IsScalar": true
+        }
+      ]
+    }
+  ],
+  "Option": [
+    "csharp_namespace = \"Videa.TrafficStatisticNS.Service.Proto.Types\";"
+  ],
+  "OwnedByProject": {
+    "ProjectIs": 0,
+    "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreConsoleApp\\NetCoreConsoleApp.csproj",
+    "SolutionFolder": null,
+    "ProjectFolder": "Code\\Videa.TrafficStatistic.Service",
+    "ProjectID": null,
+    "ProjectName": "Videa.TrafficStatistic.Service",
+    "ProjectShortName": "TrafficStatistic.Service",
+    "ProjectType": 0,
+    "FileName": "Videa.TrafficStatistic.Service.csproj",
+    "ProjectGuid": "45efa08b-f356-2bf4-7c12-cb180aae9e96",
+    "ProjectContent": [],
+    "Class": [],
+    "Interface": [],
+    "Path": null,
+    "DefaultNamespace": null,
+    "AssemblyName": "Videa.TrafficStatistic.Service",
+    "ProjectReference": [
+      {
+        "ProjectIs": 2,
+        "TemplateProjectPath": "C:\\Users\\jstephens\\Source\\Repos\\Scaffold\\NetCoreClassLibrary\\NetCoreClassLibrary.csproj",
+        "SolutionFolder": null,
+        "ProjectFolder": "Code\\Videa.TrafficStatistic.Data",
+        "ProjectID": null,
+        "ProjectName": "Videa.TrafficStatistic.Data",
+        "ProjectShortName": "TrafficStatistic.Data",
+        "ProjectType": 0,
+        "FileName": "Videa.TrafficStatistic.Data.csproj",
+        "ProjectGuid": "8ef71ad7-7567-04d4-ca49-65bf69e921f1",
+        "ProjectContent": [
+          {
+            "Content": {
+              "InterfaceName": "ITrafficStatisticDbProvider",
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": null
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Interface": {
+              "InterfaceName": "ITrafficStatisticDbProvider",
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": null
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Class": null,
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "ITrafficStatisticDbProvider.cs",
+              "Folder": "Providers",
+              "Path": "Providers\\ITrafficStatisticDbProvider.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "TrafficStatisticDbProvider",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "TrafficStatisticDbProvider",
+                  "Parameter": [
+                    {
+                      "ParameterName": "connectionString",
+                      "Type": "string",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "return new SqlConnection(_connectionString);"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "_connectionString",
+                  "FieldType": "string",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": [
+                {
+                  "InterfaceName": "ITrafficStatisticDbProvider",
+                  "Namespace": {
+                    "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+                  },
+                  "Method": [
+                    {
+                      "AccessModifier": 0,
+                      "SignatureOnly": true,
+                      "IsOverride": false,
+                      "IsAbstract": false,
+                      "IsStatic": false,
+                      "IsAsync": false,
+                      "IsExtensionMethod": false,
+                      "ReturnType": "IDbConnection",
+                      "ReferencesType": null,
+                      "MethodName": "GetConnection",
+                      "Parameter": [],
+                      "CodeSnippetFile": null,
+                      "CodeSnippet": null
+                    }
+                  ],
+                  "NamespaceRef": [
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data"
+                      }
+                    },
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data.SqlClient"
+                      }
+                    }
+                  ],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "TrafficStatisticDbProvider",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "TrafficStatisticDbProvider",
+                  "Parameter": [
+                    {
+                      "ParameterName": "connectionString",
+                      "Type": "string",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "IDbConnection",
+                  "ReferencesType": null,
+                  "MethodName": "GetConnection",
+                  "Parameter": [],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "return new SqlConnection(_connectionString);"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "_connectionString",
+                  "FieldType": "string",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": [
+                {
+                  "InterfaceName": "ITrafficStatisticDbProvider",
+                  "Namespace": {
+                    "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+                  },
+                  "Method": [
+                    {
+                      "AccessModifier": 0,
+                      "SignatureOnly": true,
+                      "IsOverride": false,
+                      "IsAbstract": false,
+                      "IsStatic": false,
+                      "IsAsync": false,
+                      "IsExtensionMethod": false,
+                      "ReturnType": "IDbConnection",
+                      "ReferencesType": null,
+                      "MethodName": "GetConnection",
+                      "Parameter": [],
+                      "CodeSnippetFile": null,
+                      "CodeSnippet": null
+                    }
+                  ],
+                  "NamespaceRef": [
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data"
+                      }
+                    },
+                    {
+                      "ReferenceTo": {
+                        "NamespaceName": "System.Data.SqlClient"
+                      }
+                    }
+                  ],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "TrafficStatisticDbProvider.cs",
+              "Folder": "Providers",
+              "Path": "Providers\\TrafficStatisticDbProvider.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": true,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 1,
+                  "ConstructorName": "BaseDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ITrafficStatisticDbProvider",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+                }
+              ],
+              "Method": [],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 1,
+                  "FieldName": "DbProvider",
+                  "FieldType": "ITrafficStatisticDbProvider",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": true,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 1,
+                  "ConstructorName": "BaseDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ITrafficStatisticDbProvider",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+                }
+              ],
+              "Method": [],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 1,
+                  "FieldName": "DbProvider",
+                  "FieldType": "ITrafficStatisticDbProvider",
+                  "ReferencesType": null,
+                  "IsReadonly": true,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "BaseDataService.cs",
+              "Folder": "DataServices\\Base",
+              "Path": "DataServices\\Base\\BaseDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RatePeriod",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodStartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodEndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "RatePeriod",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodName",
+                  "Type": "String",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 255
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodStartDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RatePeriodEndDate",
+                  "Type": "DateTime",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "RatePeriod.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\RatePeriod.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellableInventoryTrafficStatistics",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryTrafficStatisticHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryTrafficStatisticSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryAURValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RowVersion",
+                  "Type": "Byte[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "SellableInventoryTrafficStatistics",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryTrafficStatisticHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryHashKey",
+                  "Type": "Char[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 32
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryTrafficStatisticSqn",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "SellableInventoryAURValue",
+                  "Type": "Decimal",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                },
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "RowVersion",
+                  "Type": "Byte[]",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": -1
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "SellableInventoryTrafficStatistics.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\SellableInventoryTrafficStatistics.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "TrafficStatistic",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "todo",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 4
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "TrafficStatistic",
+              "Constructor": [],
+              "Method": [],
+              "Property": [
+                {
+                  "AccessModifier": 0,
+                  "PropertyName": "todo",
+                  "Type": "Int32",
+                  "ReferencesType": null,
+                  "DefaultValue": null,
+                  "MaxLength": 4
+                }
+              ],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "TrafficStatistic.cs",
+              "Folder": "Entities",
+              "Path": "Entities\\TrafficStatistic.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "InterfaceName": "ITrafficStatisticDataService",
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryTrafficStatisticsDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorytrafficstatistichashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistichashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiod",
+                      "Type": "RatePeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryTrafficStatisticsAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorytrafficstatistics",
+                      "Type": "SellableInventoryTrafficStatistics",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventorytrafficstatistics.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticSqn\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryAURValue\",sellableinventorytrafficstatistics.SellableInventoryAURValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventorytrafficstatistics.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<TrafficStatistic>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetTrafficStatistics",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<TrafficStatistic>(\r\n\t\t\t\t     \"TrafficStatistic.GetTrafficStatistics\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Interface": {
+              "InterfaceName": "ITrafficStatisticDataService",
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryTrafficStatisticsDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorytrafficstatistichashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistichashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiod",
+                      "Type": "RatePeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryTrafficStatisticsAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorytrafficstatistics",
+                      "Type": "SellableInventoryTrafficStatistics",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventorytrafficstatistics.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticSqn\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryAURValue\",sellableinventorytrafficstatistics.SellableInventoryAURValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventorytrafficstatistics.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": true,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": false,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<TrafficStatistic>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetTrafficStatistics",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<TrafficStatistic>(\r\n\t\t\t\t     \"TrafficStatistic.GetTrafficStatistics\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data.SqlClient"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+                  }
+                }
+              ],
+              "InheritsFrom": null,
+              "IsGeneric": false
+            },
+            "Class": null,
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "ITrafficStatisticDataService.cs",
+              "Folder": "DataServices",
+              "Path": "DataServices\\ITrafficStatisticDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          },
+          {
+            "Content": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Linq"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Dapper"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "TrafficStatisticDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "TrafficStatisticDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ITrafficStatisticDbProvider",
+                      "PassToBaseClass": true
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "//empty constructor"
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryTrafficStatisticsDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorytrafficstatistichashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistichashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiod",
+                      "Type": "RatePeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryTrafficStatisticsAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorytrafficstatistics",
+                      "Type": "SellableInventoryTrafficStatistics",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventorytrafficstatistics.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticSqn\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryAURValue\",sellableinventorytrafficstatistics.SellableInventoryAURValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventorytrafficstatistics.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<TrafficStatistic>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetTrafficStatistics",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<TrafficStatistic>(\r\n\t\t\t\t     \"TrafficStatistic.GetTrafficStatistics\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageNumber",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                },
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageSize",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": {
+                "NamespaceRef": [],
+                "AccessModifier": 0,
+                "IsAbstract": false,
+                "Namespace": null,
+                "IsStatic": false,
+                "ClassName": "BaseDataService",
+                "Constructor": [],
+                "Method": [],
+                "Property": [],
+                "Field": [],
+                "InheritsFrom": null,
+                "Implements": []
+              },
+              "Implements": [
+                {
+                  "InterfaceName": "ITrafficStatisticDataService",
+                  "Namespace": null,
+                  "Method": [],
+                  "NamespaceRef": [],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "Interface": null,
+            "Class": {
+              "NamespaceRef": [
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Linq"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Collections.Generic"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Threading.Tasks"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Dapper"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "System.Data"
+                  }
+                },
+                {
+                  "ReferenceTo": {
+                    "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+                  }
+                }
+              ],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": {
+                "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+              },
+              "IsStatic": false,
+              "ClassName": "TrafficStatisticDataService",
+              "Constructor": [
+                {
+                  "AccessModifier": 0,
+                  "ConstructorName": "TrafficStatisticDataService",
+                  "Parameter": [
+                    {
+                      "ParameterName": "dbProvider",
+                      "Type": "ITrafficStatisticDbProvider",
+                      "PassToBaseClass": true
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "//empty constructor"
+                }
+              ],
+              "Method": [
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiodhashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryTrafficStatisticsDelete",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorytrafficstatistichashkey",
+                      "Type": "System.String",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistichashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "RatePeriodAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "rateperiod",
+                      "Type": "RatePeriod",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<bool>",
+                  "ReferencesType": null,
+                  "MethodName": "SellableInventoryTrafficStatisticsAddUpdate",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorytrafficstatistics",
+                      "Type": "SellableInventoryTrafficStatistics",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventorytrafficstatistics.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticSqn\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryAURValue\",sellableinventorytrafficstatistics.SellableInventoryAURValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventorytrafficstatistics.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+                },
+                {
+                  "AccessModifier": 0,
+                  "SignatureOnly": false,
+                  "IsOverride": false,
+                  "IsAbstract": false,
+                  "IsStatic": false,
+                  "IsAsync": true,
+                  "IsExtensionMethod": false,
+                  "ReturnType": "Task<IList<TrafficStatistic>>",
+                  "ReferencesType": null,
+                  "MethodName": "GetTrafficStatistics",
+                  "Parameter": [
+                    {
+                      "ParameterName": "sellableinventorylist",
+                      "Type": "object",
+                      "PassToBaseClass": false
+                    }
+                  ],
+                  "CodeSnippetFile": null,
+                  "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<TrafficStatistic>(\r\n\t\t\t\t     \"TrafficStatistic.GetTrafficStatistics\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+                }
+              ],
+              "Property": [],
+              "Field": [
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageNumber",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                },
+                {
+                  "AccessModifier": 2,
+                  "FieldName": "DefaultPageSize",
+                  "FieldType": "int",
+                  "ReferencesType": null,
+                  "IsReadonly": false,
+                  "IsConst": false,
+                  "IsStatic": false
+                }
+              ],
+              "InheritsFrom": {
+                "NamespaceRef": [],
+                "AccessModifier": 0,
+                "IsAbstract": false,
+                "Namespace": null,
+                "IsStatic": false,
+                "ClassName": "BaseDataService",
+                "Constructor": [],
+                "Method": [],
+                "Property": [],
+                "Field": [],
+                "InheritsFrom": null,
+                "Implements": []
+              },
+              "Implements": [
+                {
+                  "InterfaceName": "ITrafficStatisticDataService",
+                  "Namespace": null,
+                  "Method": [],
+                  "NamespaceRef": [],
+                  "InheritsFrom": null,
+                  "IsGeneric": false
+                }
+              ]
+            },
+            "AssemblyInfo": null,
+            "File": {
+              "FileName": "TrafficStatisticDataService.cs",
+              "Folder": "DataServices",
+              "Path": "DataServices\\TrafficStatisticDataService.cs",
+              "WrittenToPath": null
+            },
+            "BuildAction": 3
+          }
+        ],
+        "Class": [
+          {
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              }
+            ],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "TrafficStatisticDbProvider",
+            "Constructor": [
+              {
+                "AccessModifier": 0,
+                "ConstructorName": "TrafficStatisticDbProvider",
+                "Parameter": [
+                  {
+                    "ParameterName": "connectionString",
+                    "Type": "string",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "  if (string.IsNullOrWhiteSpace(connectionString))\r\n            {\r\n                throw new ArgumentException(\"Connection string cannot be null or empty.\", nameof(connectionString));\r\n            }\r\n\r\n            _connectionString = connectionString;\r\n            "
+              }
+            ],
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "IDbConnection",
+                "ReferencesType": null,
+                "MethodName": "GetConnection",
+                "Parameter": [],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "return new SqlConnection(_connectionString);"
+              }
+            ],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 2,
+                "FieldName": "_connectionString",
+                "FieldType": "string",
+                "ReferencesType": null,
+                "IsReadonly": true,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": null,
+            "Implements": [
+              {
+                "InterfaceName": "ITrafficStatisticDbProvider",
+                "Namespace": {
+                  "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+                },
+                "Method": [
+                  {
+                    "AccessModifier": 0,
+                    "SignatureOnly": true,
+                    "IsOverride": false,
+                    "IsAbstract": false,
+                    "IsStatic": false,
+                    "IsAsync": false,
+                    "IsExtensionMethod": false,
+                    "ReturnType": "IDbConnection",
+                    "ReferencesType": null,
+                    "MethodName": "GetConnection",
+                    "Parameter": [],
+                    "CodeSnippetFile": null,
+                    "CodeSnippet": null
+                  }
+                ],
+                "NamespaceRef": [
+                  {
+                    "ReferenceTo": {
+                      "NamespaceName": "System.Data"
+                    }
+                  },
+                  {
+                    "ReferenceTo": {
+                      "NamespaceName": "System.Data.SqlClient"
+                    }
+                  }
+                ],
+                "InheritsFrom": null,
+                "IsGeneric": false
+              }
+            ]
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": true,
+            "Namespace": {
+              "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "BaseDataService",
+            "Constructor": [
+              {
+                "AccessModifier": 1,
+                "ConstructorName": "BaseDataService",
+                "Parameter": [
+                  {
+                    "ParameterName": "dbProvider",
+                    "Type": "ITrafficStatisticDbProvider",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "DbProvider = dbProvider ?? throw new ArgumentException(nameof(dbProvider));"
+              }
+            ],
+            "Method": [],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 1,
+                "FieldName": "DbProvider",
+                "FieldType": "ITrafficStatisticDbProvider",
+                "ReferencesType": null,
+                "IsReadonly": true,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "RatePeriod",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatePeriodHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatePeriodSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatePeriodName",
+                "Type": "String",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 255
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatePeriodStartDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RatePeriodEndDate",
+                "Type": "DateTime",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "SellableInventoryTrafficStatistics",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryTrafficStatisticHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryHashKey",
+                "Type": "Char[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 32
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryTrafficStatisticSqn",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "SellableInventoryAURValue",
+                "Type": "Decimal",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              },
+              {
+                "AccessModifier": 0,
+                "PropertyName": "RowVersion",
+                "Type": "Byte[]",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": -1
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "TrafficStatistic",
+            "Constructor": [],
+            "Method": [],
+            "Property": [
+              {
+                "AccessModifier": 0,
+                "PropertyName": "todo",
+                "Type": "Int32",
+                "ReferencesType": null,
+                "DefaultValue": null,
+                "MaxLength": 4
+              }
+            ],
+            "Field": [],
+            "InheritsFrom": null,
+            "Implements": []
+          },
+          {
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Linq"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Collections.Generic"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Threading.Tasks"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Dapper"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+                }
+              }
+            ],
+            "AccessModifier": 0,
+            "IsAbstract": false,
+            "Namespace": {
+              "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+            },
+            "IsStatic": false,
+            "ClassName": "TrafficStatisticDataService",
+            "Constructor": [
+              {
+                "AccessModifier": 0,
+                "ConstructorName": "TrafficStatisticDataService",
+                "Parameter": [
+                  {
+                    "ParameterName": "dbProvider",
+                    "Type": "ITrafficStatisticDbProvider",
+                    "PassToBaseClass": true
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "//empty constructor"
+              }
+            ],
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatePeriodDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "rateperiodhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryTrafficStatisticsDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorytrafficstatistichashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistichashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatePeriodAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "rateperiod",
+                    "Type": "RatePeriod",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryTrafficStatisticsAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorytrafficstatistics",
+                    "Type": "SellableInventoryTrafficStatistics",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventorytrafficstatistics.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticSqn\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryAURValue\",sellableinventorytrafficstatistics.SellableInventoryAURValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventorytrafficstatistics.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": false,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": true,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<TrafficStatistic>>",
+                "ReferencesType": null,
+                "MethodName": "GetTrafficStatistics",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorylist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<TrafficStatistic>(\r\n\t\t\t\t     \"TrafficStatistic.GetTrafficStatistics\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              }
+            ],
+            "Property": [],
+            "Field": [
+              {
+                "AccessModifier": 2,
+                "FieldName": "DefaultPageNumber",
+                "FieldType": "int",
+                "ReferencesType": null,
+                "IsReadonly": false,
+                "IsConst": false,
+                "IsStatic": false
+              },
+              {
+                "AccessModifier": 2,
+                "FieldName": "DefaultPageSize",
+                "FieldType": "int",
+                "ReferencesType": null,
+                "IsReadonly": false,
+                "IsConst": false,
+                "IsStatic": false
+              }
+            ],
+            "InheritsFrom": {
+              "NamespaceRef": [],
+              "AccessModifier": 0,
+              "IsAbstract": false,
+              "Namespace": null,
+              "IsStatic": false,
+              "ClassName": "BaseDataService",
+              "Constructor": [],
+              "Method": [],
+              "Property": [],
+              "Field": [],
+              "InheritsFrom": null,
+              "Implements": []
+            },
+            "Implements": [
+              {
+                "InterfaceName": "ITrafficStatisticDataService",
+                "Namespace": null,
+                "Method": [],
+                "NamespaceRef": [],
+                "InheritsFrom": null,
+                "IsGeneric": false
+              }
+            ]
+          }
+        ],
+        "Interface": [
+          {
+            "InterfaceName": "ITrafficStatisticDbProvider",
+            "Namespace": {
+              "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+            },
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "IDbConnection",
+                "ReferencesType": null,
+                "MethodName": "GetConnection",
+                "Parameter": [],
+                "CodeSnippetFile": null,
+                "CodeSnippet": null
+              }
+            ],
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              }
+            ],
+            "InheritsFrom": null,
+            "IsGeneric": false
+          },
+          {
+            "InterfaceName": "ITrafficStatisticDataService",
+            "Namespace": {
+              "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+            },
+            "Method": [
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatePeriodDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "rateperiodhashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiodhashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryTrafficStatisticsDelete",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorytrafficstatistichashkey",
+                    "Type": "System.String",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistichashkey, DbType.StringFixedLength);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsDelete\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "RatePeriodAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "rateperiod",
+                    "Type": "RatePeriod",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodHashKey\",rateperiod.RatePeriodHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodSqn\",rateperiod.RatePeriodSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodName\",rateperiod.RatePeriodName, DbType.AnsiString);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodStartDate\",rateperiod.RatePeriodStartDate, DbType.DateTime);\r\n\t\t\t\tsqlParams.Add(\"@RatePeriodEndDate\",rateperiod.RatePeriodEndDate, DbType.DateTime);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.RatePeriodAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<bool>",
+                "ReferencesType": null,
+                "MethodName": "SellableInventoryTrafficStatisticsAddUpdate",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorytrafficstatistics",
+                    "Type": "SellableInventoryTrafficStatistics",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticHashKey\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryHashKey\",sellableinventorytrafficstatistics.SellableInventoryHashKey, DbType.AnsiStringFixedLength);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryTrafficStatisticSqn\",sellableinventorytrafficstatistics.SellableInventoryTrafficStatisticSqn, DbType.Int32);\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryAURValue\",sellableinventorytrafficstatistics.SellableInventoryAURValue, DbType.Decimal);\r\n\t\t\t\tsqlParams.Add(\"@RowVersion\",sellableinventorytrafficstatistics.RowVersion, DbType.Binary);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .ExecuteAsync(\r\n\t\t\t\t     \"TrafficStatisticApi.SellableInventoryTrafficStatisticsAddUpdate\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result > 0;\r\n\t\t\t}\r\n"
+              },
+              {
+                "AccessModifier": 0,
+                "SignatureOnly": true,
+                "IsOverride": false,
+                "IsAbstract": false,
+                "IsStatic": false,
+                "IsAsync": false,
+                "IsExtensionMethod": false,
+                "ReturnType": "Task<IList<TrafficStatistic>>",
+                "ReferencesType": null,
+                "MethodName": "GetTrafficStatistics",
+                "Parameter": [
+                  {
+                    "ParameterName": "sellableinventorylist",
+                    "Type": "object",
+                    "PassToBaseClass": false
+                  }
+                ],
+                "CodeSnippetFile": null,
+                "CodeSnippet": "using (var connection = DbProvider.GetConnection())\r\n\t\t\t{\r\n\t\t\t\tvar sqlParams = new DynamicParameters();\r\n\t\t\t\tsqlParams.Add(\"@SellableInventoryList\",sellableinventorylist, DbType.String);\r\n\t\t\t\t\r\n\t\t\t\tvar result = await connection\r\n\t\t\t\t     .QueryAsync<TrafficStatistic>(\r\n\t\t\t\t     \"TrafficStatistic.GetTrafficStatistics\",\r\n\t\t\t\t        sqlParams,\r\n\t\t\t\t        commandType: CommandType.StoredProcedure)\r\n\t\t\t\t     .ConfigureAwait(false);\r\n\t\t\t\t\r\n\t\t\t\treturn result.ToList();\r\n\t\t\t}\r\n"
+              }
+            ],
+            "NamespaceRef": [
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Data.SqlClient"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Collections.Generic"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "System.Threading.Tasks"
+                }
+              },
+              {
+                "ReferenceTo": {
+                  "NamespaceName": "Videa.TrafficStatisticNS.Data.DataServices"
+                }
+              }
+            ],
+            "InheritsFrom": null,
+            "IsGeneric": false
+          }
+        ],
+        "Path": null,
+        "DefaultNamespace": null,
+        "AssemblyName": "Videa.TrafficStatistic.Data",
+        "ProjectReference": [],
+        "NuGetReference": [
+          {
+            "NuGetName": "Dapper",
+            "Version": "1.50.2"
+          }
+        ],
+        "PostBuildEventStep": []
+      }
+    ],
+    "NuGetReference": [],
+    "PostBuildEventStep": []
+  }
+}
